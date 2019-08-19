@@ -1,0 +1,2072 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?df2da21ec003ed3f44bbde6cbef22d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <title>1_全球更好用的商标搜索_权大师</title>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="Mm5nN0dBbW9jGBB5KB43O34pHnF1ESg3ZhgkQwgCKQteWlFcPSBAWQ==">
+    <meta name="keywords" content="1_注册商标查询，中国商标官网查询，商标搜索，商标检索，权大师">
+    <meta name="description" content="免费精准的商标查询平台,中国更全的商标信息库,精准智能的商标相似查询结果,为商标申请人降低商标驳回风险,更快,更准的定位商标注册成功概率。">
+    <link href="/home/css/jquery.confirm-1.0.css?3.3" rel="stylesheet">
+    <link href="/static/search/css/searchlist.css?3.3" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://so.quandashi.com/static/search/css/common.css?3.3" />
+    <script src="https://so.quandashi.com/static/search/jquery-1.9.1.min.js?3.3"></script>
+    <script type="text/javascript" src="https://so.quandashi.com/home/js/jquery.form.min.js?3.3"></script>
+    <link rel="stylesheet" type="text/css" href="https://so.quandashi.com/home/js/cropperjs/cropper.min.css?3.3" />
+    <script type="text/javascript" src="https://so.quandashi.com/home/js/cropperjs/cropper.min.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/vue.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/layer/layer.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/common.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/testData.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/js/serviceGroupMap.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/js/sc.js?3.3"></script>
+    <script src="https://so.quandashi.com/static/search/js/searchCache.js?3.3"></script>
+
+    <script type="text/javascript">
+        //document.domain = "//";
+        var SITE_URL = "https://so.quandashi.com/";
+        var SITE_URL_WWW = "https://www.quandashi.com/";
+        var ONLY_URL = "https://account.quandashi.com/passport/login?callback=https%3A%2F%2Fso.quandashi.com%2Findex%2Fsearch%3Fkey%3D1";  //登录地址
+        var searchApi = 'https://so.quandashi.com/search/';
+        var userId = '';
+        //大类列表
+        var cgList = [];
+        var cate = {};
+        cate['fcgid'] = '1';
+        cate['fcgnum'] = '01';
+        cate['fcgname'] = '化学原料';
+        cate['name'] = '1';
+        cate['value'] = '01类 化学原料';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '952';
+        cate['fcgnum'] = '02';
+        cate['fcgname'] = '颜料油漆';
+        cate['name'] = '2';
+        cate['value'] = '02类 颜料油漆';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '1102';
+        cate['fcgnum'] = '03';
+        cate['fcgname'] = '日化用品';
+        cate['name'] = '3';
+        cate['value'] = '03类 日化用品';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '1415';
+        cate['fcgnum'] = '04';
+        cate['fcgname'] = '燃料油脂';
+        cate['name'] = '4';
+        cate['value'] = '04类 燃料油脂';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '1552';
+        cate['fcgnum'] = '05';
+        cate['fcgname'] = '医药';
+        cate['name'] = '5';
+        cate['value'] = '05类 医药';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '2028';
+        cate['fcgnum'] = '06';
+        cate['fcgname'] = '金属材料';
+        cate['name'] = '6';
+        cate['value'] = '06类 金属材料';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '2533';
+        cate['fcgnum'] = '07';
+        cate['fcgname'] = '机械设备';
+        cate['name'] = '7';
+        cate['value'] = '07类 机械设备';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '3596';
+        cate['fcgnum'] = '08';
+        cate['fcgname'] = '手工器械';
+        cate['name'] = '8';
+        cate['value'] = '08类 手工器械';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '10455';
+        cate['fcgnum'] = '09';
+        cate['fcgname'] = '科学仪器';
+        cate['name'] = '9';
+        cate['value'] = '09类 科学仪器';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '3900';
+        cate['fcgnum'] = '10';
+        cate['fcgname'] = '医疗器械';
+        cate['name'] = '10';
+        cate['value'] = '10类 医疗器械';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '4137';
+        cate['fcgnum'] = '11';
+        cate['fcgname'] = '灯具空调';
+        cate['name'] = '11';
+        cate['value'] = '11类 灯具空调';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '4533';
+        cate['fcgnum'] = '12';
+        cate['fcgname'] = '运输工具';
+        cate['name'] = '12';
+        cate['value'] = '12类 运输工具';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '4874';
+        cate['fcgnum'] = '13';
+        cate['fcgname'] = '军火烟火';
+        cate['name'] = '13';
+        cate['value'] = '13类 军火烟火';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '4970';
+        cate['fcgnum'] = '14';
+        cate['fcgname'] = '珠宝钟表';
+        cate['name'] = '14';
+        cate['value'] = '14类 珠宝钟表';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '5083';
+        cate['fcgnum'] = '15';
+        cate['fcgname'] = '乐器';
+        cate['name'] = '15';
+        cate['value'] = '15类 乐器';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '5184';
+        cate['fcgnum'] = '16';
+        cate['fcgname'] = '办公用品';
+        cate['name'] = '16';
+        cate['value'] = '16类 办公用品';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '5663';
+        cate['fcgnum'] = '17';
+        cate['fcgname'] = '橡胶制品';
+        cate['name'] = '17';
+        cate['value'] = '17类 橡胶制品';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '5824';
+        cate['fcgnum'] = '18';
+        cate['fcgname'] = '皮革皮具';
+        cate['name'] = '18';
+        cate['value'] = '18类 皮革皮具';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '5961';
+        cate['fcgnum'] = '19';
+        cate['fcgname'] = '建筑材料';
+        cate['name'] = '19';
+        cate['value'] = '19类 建筑材料';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '6281';
+        cate['fcgnum'] = '20';
+        cate['fcgname'] = '家具';
+        cate['name'] = '20';
+        cate['value'] = '20类 家具';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '6640';
+        cate['fcgnum'] = '21';
+        cate['fcgname'] = '厨房洁具';
+        cate['name'] = '21';
+        cate['value'] = '21类 厨房洁具';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7054';
+        cate['fcgnum'] = '22';
+        cate['fcgname'] = '绳网袋蓬';
+        cate['name'] = '22';
+        cate['value'] = '22类 绳网袋蓬';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7179';
+        cate['fcgnum'] = '23';
+        cate['fcgname'] = '纱线丝';
+        cate['name'] = '23';
+        cate['value'] = '23类 纱线丝';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7234';
+        cate['fcgnum'] = '24';
+        cate['fcgname'] = '布料床单';
+        cate['name'] = '24';
+        cate['value'] = '24类 布料床单';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7413';
+        cate['fcgnum'] = '25';
+        cate['fcgname'] = '服装鞋帽';
+        cate['name'] = '25';
+        cate['value'] = '25类 服装鞋帽';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7637';
+        cate['fcgnum'] = '26';
+        cate['fcgname'] = '钮扣拉链';
+        cate['name'] = '26';
+        cate['value'] = '26类 钮扣拉链';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7796';
+        cate['fcgnum'] = '27';
+        cate['fcgname'] = '地毯席垫';
+        cate['name'] = '27';
+        cate['value'] = '27类 地毯席垫';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7825';
+        cate['fcgnum'] = '28';
+        cate['fcgname'] = '健身器材';
+        cate['name'] = '28';
+        cate['value'] = '28类 健身器材';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '7956';
+        cate['fcgnum'] = '29';
+        cate['fcgname'] = '食品';
+        cate['name'] = '29';
+        cate['value'] = '29类 食品';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '8423';
+        cate['fcgnum'] = '30';
+        cate['fcgname'] = '方便食品';
+        cate['name'] = '30';
+        cate['value'] = '30类 方便食品';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '8797';
+        cate['fcgnum'] = '31';
+        cate['fcgname'] = '农林生鲜';
+        cate['name'] = '31';
+        cate['value'] = '31类 农林生鲜';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '8983';
+        cate['fcgnum'] = '32';
+        cate['fcgname'] = '啤酒饮料';
+        cate['name'] = '32';
+        cate['value'] = '32类 啤酒饮料';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9051';
+        cate['fcgnum'] = '33';
+        cate['fcgname'] = '酒';
+        cate['name'] = '33';
+        cate['value'] = '33类 酒';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9091';
+        cate['fcgnum'] = '34';
+        cate['fcgname'] = '烟草烟具';
+        cate['name'] = '34';
+        cate['value'] = '34类 烟草烟具';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9138';
+        cate['fcgnum'] = '35';
+        cate['fcgname'] = '广告销售';
+        cate['name'] = '35';
+        cate['value'] = '35类 广告销售';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9261';
+        cate['fcgnum'] = '36';
+        cate['fcgname'] = '金融物管';
+        cate['name'] = '36';
+        cate['value'] = '36类 金融物管';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9360';
+        cate['fcgnum'] = '37';
+        cate['fcgname'] = '建筑修理';
+        cate['name'] = '37';
+        cate['value'] = '37类 建筑修理';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9514';
+        cate['fcgnum'] = '38';
+        cate['fcgname'] = '通讯服务';
+        cate['name'] = '38';
+        cate['value'] = '38类 通讯服务';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9556';
+        cate['fcgnum'] = '39';
+        cate['fcgname'] = '运输贮藏';
+        cate['name'] = '39';
+        cate['value'] = '39类 运输贮藏';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9674';
+        cate['fcgnum'] = '40';
+        cate['fcgname'] = '材料加工';
+        cate['name'] = '40';
+        cate['value'] = '40类 材料加工';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9813';
+        cate['fcgnum'] = '41';
+        cate['fcgname'] = '教育娱乐';
+        cate['name'] = '41';
+        cate['value'] = '41类 教育娱乐';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '9945';
+        cate['fcgnum'] = '42';
+        cate['fcgname'] = '科技服务';
+        cate['name'] = '42';
+        cate['value'] = '42类 科技服务';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '10041';
+        cate['fcgnum'] = '43';
+        cate['fcgname'] = '餐饮住宿';
+        cate['name'] = '43';
+        cate['value'] = '43类 餐饮住宿';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '10080';
+        cate['fcgnum'] = '44';
+        cate['fcgname'] = '医疗园艺';
+        cate['name'] = '44';
+        cate['value'] = '44类 医疗园艺';
+        cgList.push(cate);
+        var cate = {};
+        cate['fcgid'] = '10150';
+        cate['fcgnum'] = '45';
+        cate['fcgname'] = '社会服务';
+        cate['name'] = '45';
+        cate['value'] = '45类 社会服务';
+        cgList.push(cate);
+        common.cgList = cgList;
+
+        var winW = $(window).width();
+        if (winW < 600) {
+            if(location.href.indexOf("reg-xieyi") == -1 && location.href.indexOf("searchdetail") == -1){
+                window.location.href = "http://h5.quandashi.com/search/index.html";
+            }
+        }
+    </script>
+    <script>
+        var isLogin = false;
+
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?df2da21ec003ed3f44bbde6cbef22d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<iframe style="display: none;" src="https://www.quandashi.com/html/img-search" id="imgData"></iframe>
+<div class="page">
+    <div class="fix-navbar">
+        <div class="clearfix">
+            <h1 class="logo"><a
+                    href="https://www.quandashi.com/"><img src="https://so.quandashi.com/static/search/images/logo-p.png" alt="权大师" title="权大师"></a>
+            </h1>
+            <div class="drop-nav">
+                <h3 class="drop-title"><i class="icon icon-item"></i><span class="text">全部导航</span></h3>
+                <div class="drop-body">
+                    <ul class="cont">
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://www.quandashi.com/sb">商标业务<i class="icon icon-link"></i></a></h3>
+                            <div class="menu-bodyer">
+                                <h4><a href="#">商标业务</a></h4>
+                                <dl>
+                                    <dt><a href="javascript:;">查询是否可以注册</a></dt>
+                                    <dd>
+                                        <a href="BASE_URL">免费商标查询</a>
+                                        <a href="https://www.quandashi.com/product/PC100139.html"
+                                           target="_blank">国内商标查询（报告）</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">快速办理商标注册</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC10001.html"
+                                           target="_blank">保姆快速注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10002.html"
+                                           target="_blank">担保无忧注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10003.html"
+                                           target="_blank">智能自助注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10004.html"
+                                           target="_blank">海外公司智能注册</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">遇到障碍如何化解</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC100002.html"
+                                           target="_blank">商标驳回复审</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100054.html"
+                                           target="_blank">商标异议答辩</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100055.html"
+                                           target="_blank">商标撤三答辩</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">异议他人商标</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC100003.html"
+                                           target="_blank">商标撤三申请</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100004.html"
+                                           target="_blank">商标异议申请</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100005.html"
+                                           target="_blank">商标无效宣告申请</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">商标信息及时变更</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC100006.html"
+                                           target="_blank">商标转让</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100007.html"
+                                           target="_blank">商标续展</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10033.html"
+                                           target="_blank">商标宽展</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100009.html"
+                                           target="_blank">商标许可备案</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100010.html"
+                                           target="_blank">商标变更</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">美国商标注册</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC100034.html"
+                                           target="_blank">美国商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10052.html"
+                                           target="_blank">补交使用证据（美国）</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">海外商标注册</a></dt>
+                                    <dd>
+                                        <a href="https://www.quandashi.com/product/PC10031.html"
+                                           target="_blank">马德里商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100045.html"
+                                           target="_blank">欧盟商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10051.html"
+                                           target="_blank">加拿大商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10050.html"
+                                           target="_blank">澳大利亚商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10049.html"
+                                           target="_blank">英国商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100306.html"
+                                           target="_blank">香港商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10047.html"
+                                           target="_blank">澳门商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC10048.html"
+                                           target="_blank">台湾商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100091.html"
+                                           target="_blank">日本商标注册</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100090.html"
+                                           target="_blank">韩国商标注册</a>
+
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://www.quandashi.com/zl">专利业务<i class="icon icon-link"></i></a></h3>
+                            <div class="menu-bodyer">
+                                <h4><a href="#">专利业务</a></h4>
+                                <dl>
+                                    <dt><a href="javascript:;">专利查新检索</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100335.html"
+                                           target="_blank">专利查新检索（报告）</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">发明专利</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC10064.html"
+                                           target="_blank">发明专利标准申请</a>
+                                        <a href="https://www.quandashi.com/product/PC10066.html"
+                                           target="_blank">发明专利担保申请</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">外观设计专利</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC10067.html"
+                                           target="_blank">单一产品外观设计</a>
+                                        <a href="https://www.quandashi.com/product/PC10071.html"
+                                           target="_blank">GUI及系列产品外观设计</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">实用新型专利</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC10073.html"
+                                           target="_blank">实用新型专利标准申请</a>
+                                        <a href="https://www.quandashi.com/product/PC10074.html"
+                                           target="_blank">实用新型专利担保申请</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">复审无效</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100014.html"
+                                           target="_blank">专利驳回复审</a>
+                                        <a href="https://www.quandashi.com/product/PC100015.html"
+                                           target="_blank">专利无效宣告</a>
+                                        <a href="https://www.quandashi.com/product/PC100040.html"
+                                           target="_blank">专利无效答辩</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">专利流程服务</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100042.html"
+                                           target="_blank">年费代缴</a>
+                                        <a href="https://www.quandashi.com/product/PC100446.html"
+                                           target="_blank">专利著录项变更</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://www.quandashi.com/bq">版权业务<i class="icon icon-link"></i></a></h3>
+                            <div class="menu-bodyer">
+                                <h4><a href="#">版权业务</a></h4>
+                                <dl>
+                                    <dt><a href="javascript:;">软件开发完成</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100120.html"
+                                           target="_blank">软件著作权登记加急</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100019.html"
+                                           target="_blank">软件著作权登记</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">美术文字作品版权</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100020.html"
+                                           target="_blank">美术作品版权登记</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100121.html"
+                                           target="_blank">美术作品版权登记加急</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100308.html"
+                                           target="_blank">文字作品版权登记</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100309.html"
+                                           target="_blank">文字作品版权登记加急</a>
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="javascript:;">版权问题解决</a></dt>
+                                    <dd>
+
+                                        <a href="https://www.quandashi.com/product/PC100021.html"
+                                           target="_blank">版权变更</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100022.html"
+                                           target="_blank">版权补证</a>
+
+                                        <a href="https://www.quandashi.com/product/PC100023.html"
+                                           target="_blank">版权转让</a>
+
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="cont cont-2">
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://www.quandashi.com/zhuanti/hhr">合伙人计划<i class="icon icon-hot"></i></a>
+                            </h3>
+                        </li>
+                        <li class="menu" onclick="openWebsiteTools()">
+                            <h3 class="menu-title"><a target="_blank" href="javascript:;">智能工具</a></h3>
+                        </li>
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://jy.quandashi.com">商标交易<i class="icon icon-hot"></i></a></h3>
+                        </li>
+                        <li class="menu">
+                            <h3 class="menu-title"><a target="_blank"
+                                                      href="https://www.quandashi.com/index/dispark-plat">开放平台</a></h3>
+                        </li>
+                    </ul>
+                    <ul class="cont cont-3">
+                        <li class="menu">
+                            <h3 class="menu-title"><a href="#"><i class="icon icon-telphone"></i>400-9988-211</a>
+                            </h3>
+                        </li>
+                        <li class="menu">
+                            <h3 class="menu-title"><a
+                                    onclick="NTKF.im_openInPageChat('kf_9479_1482483215983')"><i class="icon icon-message"></i>业务咨询</a>
+                            </h3>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <ul class="navbar">
+                <li class="menu"><a
+                        href="https://www.quandashi.com/sb/bmkszc/4">商标注册<i class="icon icon-hot"></i></a></li>
+                <li class="menu" onclick="openWebsiteTools()"><a href="javascript:;">智能工具</a></li>
+                <li class="menu"><a href="https://www.quandashi.com/bi-report/index" target="_blank">商标大数据</a></li>
+                <li class="menu"><a href="https://jy.quandashi.com"
+                                    target="_blank">商标交易<i class="icon icon-hot"></i></a></li>
+                <li class="menu"><a href="https://www.quandashi.com/index/dispark-plat" target="_blank">开放平台</a>
+                </li>
+                <li class="menu"><a href="https://www.quandashi.com/plus/open.html"
+                                    target="_blank">PLUS会员<i class="icon icon-hot"></i></a></li>
+            </ul>
+            <div class="item-right">
+                <div class="login-btns">
+                    <a class="btn1"
+                       href="https://account.quandashi.com/passport/login?callback=https%3A%2F%2Fso.quandashi.com%2Findex%2Fsearch%3Fkey%3D1">登录</a>
+                    <a class="btn2" href="https://account.quandashi.com/passport/register">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //全局变量
+        var key = '1';
+        var param = '0';
+        var styles = ''; if(styles == "") styles="all,jingzhun,high_low_similar,bufen,jiazi,jianzi,bianzi,huanxu,pinyin,teshuzi,xingjinzi";
+        var typeCode = '';
+        var processCode3 = '';
+        var createYear = '';
+        var highFilter = '';
+        var appkey = '';
+        var host = '';
+
+        var isAgent = '';
+    </script>
+    <div id="searchList" v-cloak>
+        <div class="page-search w-center">
+            <a href="/" class="main-title">商标搜索</a>
+            <div class="search-input">
+                <input type="text" class="text sc_search_key" name="" placeholder="请输入商标名称" v-model="key" @keyup.enter="inputSearch">
+                <a href="javascript:void(0)" class="button search" id="search" @click="inputSearch">权一下</a>
+                <div class="img-search-btn">
+                    <i class="icon-camera" id="select-btn"></i>
+                    <form action="" method="post" id="formFile">
+                        <input class="select-input" type="file" id="select-fileinput" name="fileinput" accept="image/png,image/gif,image/jpg,image/jpeg" >
+                    </form>
+                </div>
+            </div>
+            <div class="search-right">
+                <a href="/index/nisi.html" target="_blank" class="button button-white" @click="goNice">商品分类表</a>
+                <a href="/search/notice/index" target="_blank" class="button button-white"
+                   @click="goNotice">初审公告</a>
+            </div>
+        </div>
+        <div class="page-nav">
+            <div class="page-nav-in w-center">
+                <a href="javascript:void(0)" :class="{active:params.param == 2}"
+                   @click="selectSearchType(2)">近似商标</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 0}"
+                   @click="selectSearchType(0)">精准商标</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 5}"
+                   @click="selectSearchType(5)">申请号</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 3}"
+                   @click="selectSearchType(3)">申请人</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 4}"
+                   @click="selectSearchType(4)">商品/服务</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 9}"
+                   @click="selectSearchType(9)">图形搜索</a>
+                <a href="javascript:void(0)" :class="{active:params.param == 7}"
+                   @click="selectSearchType(7)">代理公司</a>
+            </div>
+        </div>
+        <div class="page-checkbox w-center">
+            <div class=" checkbox-all-box" :class="{hide:params.param != '2'}">
+                <!--        <label class="checkbox-box">-->
+                <!--            <label class="checkbox checked checkbox-all" @click="selectStyles">-->
+                <!--                <input type="checkbox" name="" checked>-->
+                <!--            </label>-->
+                <!--            <span>全选</span>-->
+                <!--        </label>-->
+                <label class="checkbox-box" v-for="item in searchWay">
+                    <label class="checkbox" :class="[{checked:item['checked']},{'checkbox-all':item['value']=='all'}]" @click="selectStyles">
+                        <input type="checkbox" name="" :value="item.value" v-model="selectedStyles">
+                    </label>
+                    <span>{{item.name}}</span>
+                    <i class="icon-wen icon-tips" v-if="item['tips']"><div class="tips-content">{{item['tips']}}</div></i>
+                </label>
+            </div>
+        </div>
+        <div class="page-form w-center">
+            <div class="selected-category" v-if="">
+                <label>已选条件</label>
+                <span style="display: none">{{selectedCategories}}</span>
+                <div class="selected-category-box">
+                    <a href="javascript:void(0)" :class="{active:item.name == searchCategories}"
+                       v-for="item in cgList" v-if="item.checked">
+                        <span class="text" v-on:click="selectSearchCategories" :data-value="item.name">{{item.value}}</span>
+                        <i class="icon icon-close" :data-value="item.name" v-on:click="deleteSearchCategories">×</i>
+                        <div class="selected-service-box checkbox-all-box">
+                            <div class="service-list">
+                                <label class="checkbox-box" :class="{disabled:item == 0}">
+                                    <label class="checkbox checkbox-all checked">
+                                        <input type="checkbox" name="" checked>
+                                    </label>
+                                    <span>全选</span>
+                                </label>
+                            </div>
+                            <div class="selected-service-box-in scroll">
+                                <div class="service-list" v-for="(item, key) in groupList[item.name]">
+                                    <label class="checkbox-box" :class="{disabled:item == 0}">
+                                        <label class="checkbox checked">
+                                            <input type="checkbox" name="" :value="key" checked>
+                                        </label>
+                                        <span>{{key}} {{serviceGroup[key]}}({{item}})</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="service-list service-button">
+                                <input type="button" class="button button-white" :data-value="item.name" @click="clearGroup" value="取消" />
+                                <input type="button" class="button" :data-value="item.name" @click="selectGroup" value="确定" />
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="search-status" @click="" v-for="item in chooseList">
+							<span class="text">
+                        <template v-if="['selectedGraphCode', 'lawStatus', 'highFilter'].indexOf(item['fromType']) != -1">
+                            {{item['name_zh']}}
+                        </template>
+                        <template v-if="['selectedGraphCode', 'lawStatus', 'highFilter'].indexOf(item['fromType']) == -1">
+                            {{item['name']}}</template>
+                    </span>
+                        <i class="icon icon-close" :data-value="item['name']" :data-type="item['fromType']" v-on:click="deleteChooseId">×</i>
+                    </a>
+                    <a href="javascript:void(0)" class="search-status" @click="" v-if="params.serviceGoods != ''">
+                        <span class="text">交叉检索</span>
+                        <i class="icon icon-close" data-value="cross" data-type="cross" v-on:click="deleteChooseId">×</i>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <ul v-if="params.param == 9">
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>图形要素</label>
+                    <div class="category-show-box">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedGraphCode}"
+                           v-for="item in graphCode" v-on:click="selectGraphCode" :data-name="item.name_zh"
+                           :data-value="item.name">{{item.name_zh}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <ul v-if="params.param == 4">
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>非规范商品类</label>
+                    <div class="category-show-box">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedSimilarCode}"
+                           v-for="item in similarCode" v-on:click="selectSimilarCode" :data-name="item.name"
+                           :data-value="item.name">{{item.name}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>规范商品类</label>
+                    <div class="category-show-box">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedStandardCode}"
+                           v-for="item in standardCode" v-on:click="selectStandardCode" :data-name="item.name"
+                           :data-value="item.name">{{item.name}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <ul>
+                <li class="search-category" v-if="params.param == 3">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>申请人</label>
+                    <div class="category-show-box">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedApplicants}"
+                           v-for="item in applicants" v-on:click="selectApplicants" :data-name="item.name"
+                           :data-value="item.name">{{item.name}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>申请类别</label>
+                    <div class="category-show-box select-show-category">
+                        <a href="javascript:void(0)" :class="{active:item.checked == true}" v-for="item in cgList"
+                           v-if="item['show']" v-on:click="selectCategories" :data-name="item.value"
+                           :data-value="item.name">{{item.value}}({{item.num}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>法律状态</label>
+                    <div class="category-show-box">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedLawStatus}"
+                           v-for="item in lawStatus" v-on:click="selectLawStatus" :data-name="item.name_zh"
+                           :data-value="item.name">{{item.name_zh}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="search-category">
+                    <a href="javascript:void(0)" class="btn">更多</a>
+                    <label>申请年份</label>
+                    <div class="category-show-box select-show-year">
+                        <a href="javascript:void(0)" :class="{active:item.name == selectedCreateYears}"
+                           v-for="item in createYears" v-if="item.name != 0" v-on:click="selectCreateYears"
+                           :data-name="item.name" :data-value="item.name">{{item.name}}({{item.value}})</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="search-category">
+                    <label>高级筛选</label>
+                    <div class="category-show-box ">
+                        <a href="javascript:void(0)" class="cross-search"
+                           :class="{active:'cross' == selectedHighFilter}" data-name="交叉检索" data-value="cross"
+                           v-on:click="selectHighFilterCross"><i class="icon icon-hot"></i>交叉检索
+                        </a>
+                        <a href="javascript:void(0)" :class="{active:item.checked == true}"
+                           v-for="item in highFilter" v-on:click="selectHighFilter" :data-name="item.name_zh"
+                           :data-value="item.name">{{item.name_zh}}</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <div class="w_category_modal" v-show="'cross' == selectedHighFilter">
+                <v-nice :service-goods-results="serviceGoodsResults" ref="category"></v-nice>
+            </div>
+            <div class="no-result-category" v-if="(params.param == 2 || params.param == 0) && cgNoItemNum != 0">
+                <div class="no-result-top">
+                    <span>以下类别暂未查询到商标申请，可尝试注册申请</span>
+                    <a href="javascript:void(0)" class="talk"
+                       onclick="NTKF.im_openInPageChat('kf_9479_1482483215983')">咨询商标顾问</a>
+                </div>
+                <div class="no-result-category-box">
+                    <a :href="getBrandRigisterUrl(item)" :class="" v-for="item in cgList" v-if="item.num == 0"
+                       target="_blank">
+                        {{item.value}}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content w-center">
+            <div class="page-content-left">
+                <div class="search-top">权大师为您找到相关结果 <i>{{totalResults}}</i> 个</div>
+                <div class="list-banner">
+                    <a class="sc_banner" target="_blank"
+                       href="https://www.quandashi.com/plus/open.html"><img style="width: 100%;" alt="广告" src="https://tm-files.oss-cn-beijing.aliyuncs.com/ad/2019/06/13/2f1e2665a7bcfd43d43b0a118b45add2.png"></a>
+                </div>
+
+                <div class="no-search-data" v-if="resultList.length == 0">
+                    <img src="https://so.quandashi.com/static/search/images/no-data-c.png">
+                    <div class="no-search-tips">
+                        <p>亲，未检测到您关注的商标，请换个词试试~</p>
+                        <p>不过您可以就<a href="https://www.quandashi.com/brand-order/basemsg?brandname=1"
+                                    target="_blank">1</a>提起商标申请哦</p>
+                    </div>
+                    <a href="https://www.quandashi.com/brand-order/basemsg?brandname=1" class="button">立即申请</a>
+                </div>
+                <ul class="search-list" v-if="resultList.length != 0">
+                    <li v-for="(item,index) in resultList">
+                        <div class="result-href">
+                            <div class="brand-img">
+                                <a href="javascript:void(0)" :data-index="index" @click="goDetail">
+                                    <img :src="imgBaseUrl + item.logoUrl" :alt="item.name" onerror="this.src='https://so.quandashi.com/home/images/error-img.png'">
+                                </a>
+                            </div>
+                            <div class="brand-info">
+                                <a href="javascript:void(0)" :data-index="index" @click="goDetail">
+                                    <h2>
+                                        {{item.name}}
+                                        <i class="chi" v-if="item.typeFlag[2] == 1"></i>
+                                        <i class="zhu" v-if="item.typeFlag[1] == 1"></i>
+                                        <i class="db" v-if="item.typeFlag[0] == 1"></i>
+                                    </h2>
+                                </a>
+                                <div class="brand-info-in" :data-index="index" :data-id="item.id"
+                                     :data-flag="item.typeFlag">
+                                    <ul>
+                                        <li>
+                                            <label>当前状态：</label>
+                                            <span class="process-name">{{item.processName}}</span>
+                                        </li>
+                                        <li>
+                                            <label>商品类别：</label>
+                                            <span class="td-btype">{{cgList[item.typeCode - 1].value}}</span>
+                                            <label>申请号：</label>
+                                            <span>{{item.dataId}}</span>
+                                        </li>
+                                        <li>
+                                            <label>申请日期：</label>
+                                            <span>{{item.createDate}}</span>
+                                        </li>
+                                        <li>
+                                            <label>申请人：</label>
+                                            <span>{{item.applicant}}</span>
+                                        </li>
+                                        <li>
+                                            <label>初审公告日期：</label>
+                                            <span>{{item.noticeDate == ''?'--':item.noticeDate}}</span>
+                                        </li>
+                                        <li>
+                                            <label>注册公告日期：</label>
+                                            <span>{{item.registerDate == ''?'--':item.registerDate}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-status">
+                            <div
+                                    v-if="item.statusName == 100003 || item.statusName == 100015 || item.statusName == 300000 || (item.statusName.substring(0,4) == 1000 && !(item.statusName == 100012 || item.statusName == 100014 || item.statusName == 100017 || item.statusName == 100008))">
+                                <a class="status1" target="_blank"
+                                   :href="'https://www.quandashi.com/brand-monitor/index?name=' + item.name + '&type=3'"
+                                   :data-flag="item.dataId" :data-code="item.typeCode">关注</a>
+                                <span class="status1"
+                                      :data-dataId="item.dataId"
+                                      :data-name="item.name"
+                                      :data-typeCode="item.typeCode"
+                                      @click="buyBrand">购买</span>
+                            </div>
+                            <div
+                                    v-else-if="item.statusName == 100012 || item.statusName == 200001 || item.statusName == 100017 || item.statusName == 100008 || item.statusName == 100014">
+                                <a class="status1" target="_blank"
+                                   :href="'https://www.quandashi.com/brand-monitor/index?name=' + item.name + '&type=3'"
+                                   :data-flag="item.dataId" :data-code="item.typeCode">关注</a>
+                            </div>
+                            <div
+                                    v-if="item.statusName == 200001 || item.statusName == 100012 || item.statusName == 100014">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/bmkszc/4">注册</a>
+                            </div>
+                            <div
+                                    v-else-if="item.statusName == 100021 || item.statusName == 100022 || item.statusName == 100017 || item.statusName == 100008 || item.statusName == 100013 || item.statusName == 100005 || item.statusName == 100010 || item.statusName == 100009 || item.statusName == 100006 || item.statusName == 100002">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbzr">转让</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbbg">变更</a>
+                            </div>
+                            <div v-else-if="item.statusName == 100020">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbwxxgsq">无效</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbzr">转让</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbbg">变更</a>
+                            </div>
+                            <div v-else-if="item.statusName == 100001">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbyysq">异议</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbzr">转让</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbbg">变更</a>
+                            </div>
+                            <div v-else-if="item.statusName == 100004">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbbg">变更</a>
+                            </div>
+                            <div v-else-if="item.statusName == 100011">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbzr">转让</a>
+                            </div>
+                            <div
+                                    v-else-if="item.statusName == 100003 || item.statusName == 100015 || item.statusName == 100016 || item.statusName == 100018 || item.statusName == 100019">
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbwxxgsq">无效</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbcssq">撤三</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbzr">转让</a>
+                                <a class="btn status2" target="_blank"
+                                   href="https://www.quandashi.com/sb/sbxz">续展</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="pagination">
+                    <v-page :page="params.page" :pages="pages" v-show="pages > 1"></v-page>
+                </div>
+            </div>
+            <div class="page-content-right">
+                <div class="hot-brand hot-brand-right" data-type="1">
+                    <h2>相关商标出售</h2>
+                    <ul class="loading">
+                    </ul>
+                    <a class="more hide" href="javascript:;">查看更多&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <script type="text/x-template" id="w_category">
+        <div class="brandInfo-wrap">
+            <!-- start 自助选择 -->
+            <div class="section-selfchoice clearfix" id="section-selfchoice">
+                <!-- start 左-->
+                <div class="group-left">
+                    <div class="ns-search-container">
+                        <div class="myInputGroup">
+                            <input type="text" name="keys" class="myInput" placeholder="请输入商品/服务名称进行查询">
+                            <button class="myBtn" id="btn-search"><i class="iconfont"></i></button>
+                        </div>
+                    </div>
+                    <ul class="group scroll">
+                        <li v-for="v in cgList" class="list" :data-cgid="v['fcgid']" :data-cgnum="v['fcgnum']" :data-cgname="v['fcgname']">
+                            <span class="title-first" data-has-data="0" :data-cgid="v['fcgid']">第<i class="color">{{v['fcgnum']}}</i>类 {{v['fcgname']}}</span>
+                        </li>
+                    </ul>
+                </div><!-- end 左-->
+                <!-- start 右-->
+                <div class="group-right">
+                    <h3 class="title"><span>已选择<i class="color">{{crossResults.length}}</i>小项</span>
+                    </h3>
+                    <img v-if="crossResults.length == 0" class="bgimg" src="https://so.quandashi.com/static/search/images/selfchoice-bg.jpg" alt="请点击左侧选择商标类别">
+                    <!-- start section -->
+                    <div class="section cross-range-container scroll">
+                        <div class="cross-range-list" v-for="item in crossResults">
+                            <h2>
+                                <strong>{{item['name']}}<i class="close" :data-value="item['name']" @click="deleteCrossItem">×</i></strong>
+                                <span>[{{item['data']['explain']}}]</span>
+                            </h2>
+                            <ul>
+                                <li v-for="intersect in item['data']['intersect']">
+                                    <div class="cross-range">
+                                        <span class="left">交叉范围</span>
+                                        <span class="comment">{{intersect['content']}}</span>
+                                    </div>
+                                    <div class="cross-goods">
+                                        <span class="left">「相关注释」</span>
+                                        <!--                                    <span class="comment">{{intersect['comments'].toString()}}</span>-->
+                                        <span class="comment">
+                                        <p v-for="comment in intersect['comments']">{{comment}}</p>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- end section -->
+                </div><!-- end 右-->
+            </div><!-- end 自助选择 -->
+            <div class="btns">
+                <a href="javascript:void(0)" class="button save_goods">确 定</a>
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript">
+        function isEmptyObject(e) {
+            var t;
+            for (t in e)
+                return !1;
+            return !0
+        }
+
+        var getcglistUrl = "/search/search/get-cg-list";  //获取分类
+        $(function(){
+            var sortNice = searchListVUE.$refs.category.sortNice;
+            var checkSecondSm = searchListVUE.$refs.category.checkSecondSm;
+            /* 自助选择——点击左侧大类列表，展开、显示群组列表 */
+            $('#section-selfchoice').on('click','.group-left .list .title-first', function(){
+                var hasData = $(this).attr("data-has-data");
+                var pid = $(this).attr("data-cgid");
+                var _this = $(this);
+                if(hasData==0){
+                    var loading = layer.load(2);
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        data: {pid:pid},
+                        url: getcglistUrl,
+                        success: function(msg) {
+                            if(msg.status){
+                                _this.attr("data-has-data",1);
+                                var alldata = msg.msg;
+                                var _insert = "";
+                                for (var i = 0; i < alldata.length; i++) {
+                                    _insert += '<div class="title-second">\
+                                        <span class="second-lg" data-has-data="0" data-cgnum="'+alldata[i]['fcgnum']+'" data-cgname="'+alldata[i]['fcgname']+'" data-cgid="'+alldata[i]['fcgid']+'">'+alldata[i]['fcgnum']+' '+alldata[i]['fcgname']+'</span>\
+                                        <dl class="second-sm">\
+                                        </dl>\
+                                        </div>';
+                                }
+                                _this.after(_insert);
+                            }else{
+                                layer.msg("似乎出了点问题，请稍后重试");
+                            }
+                            layer.close(loading);
+                        },
+                        error: function(){
+                            layer.msg('加载数据失败');
+                            layer.close(loading);
+                        }
+                    })
+                }
+                var isOpen = $(this).closest('.list').hasClass('open');
+                $(this).closest('.list')[isOpen?'removeClass':'addClass']('open');
+            });
+            /* 自助选择——点击左侧群组列表，展开、显示小项 */
+            $('#section-selfchoice').on('click',' .group-left .list .second-lg', function(){
+                var cgNum = $(this).parents(".list").attr("data-cgnum");
+                var cgName = $(this).parents(".list").attr("data-cgname");
+                var hasData = $(this).attr("data-has-data");
+                var pid = $(this).attr("data-cgid");
+                var _this = $(this);
+                if(hasData==0){
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        data: {pid:pid},
+                        url: getcglistUrl,
+                        success: function(msg) {
+                            if(msg.status){
+                                _this.attr("data-has-data",1);
+                                var alldata = msg.msg;
+                                //数据数组重排
+                                alldata = sortNice(alldata);
+
+                                var _insert = "";
+                                for (var i = 0; i < alldata.length; i++) {
+
+                                    _insert += '<dt class="row" data-cgparent="'+alldata[i]['fcgparent']+'" data-cgid="'+alldata[i]['fcgid']+'" data-cgnum="'+alldata[i]['fcgnum']+'" data-cgname="'+alldata[i]['fcgname']+'" ><i class="iconfont icon-jiahao"></i><span class="text">'+alldata[i]['fcgnum']+'  '+alldata[i]['fcgname']+'</span></dt>';
+                                }
+                                _this.closest(".title-second").find(".second-sm").html(_insert);
+                            }else{
+                                layer.msg("似乎出了点问题，请稍后重试");
+                            }
+                        },
+                        error: function(){
+                            layer.msg('加载数据失败');
+                        }
+                    });
+                }
+                var isOpen = $(this).closest('.title-second').hasClass('open');
+                $(this).closest('.title-second')[isOpen?'removeClass':'addClass']('open');
+            });
+            /* 自助选择——添加小项 */
+            $('#section-selfchoice').on('click', '.group-left .list .second-sm .row', function(){
+                var $this = $(this);
+                var isSelected = $this.hasClass('selected');
+                if(!isSelected) {
+                    $this.addClass('selected');
+
+                    var group_num = $(this).parents(".title-second").find(".second-lg").attr("data-cgnum");
+                    var cgname = $(this).attr("data-cgname");
+                    var click_ids = searchCache.get('click_ids');
+                    if(!click_ids){
+                        click_ids = '';
+                    }
+                    click_ids += group_num + '_' + cgname + ',';
+                    searchCache.cache('click_ids', click_ids);
+
+                    searchListVUE.getCrossResults();
+                }
+            });
+            /*提交交叉检索小项*/
+            $('.brandInfo-wrap').on('click', '.save_goods', function(){
+                searchListVUE.selectedHighFilter = '';
+                searchListVUE.params.serviceGoods = searchListVUE.selectedServiceGoods;
+                searchListVUE.selectedCategories = '';
+                searchListVUE.searchCategories = searchListVUE.selectedCategories;
+                searchListVUE.getCategories();
+                searchListVUE.search('all');
+            });
+            /*自助选择搜索*/
+            $("#btn-search").on('click',function(){
+                var keys = $("input[name=keys]").val();
+                var getCgFromSouUrl = "/search/search/search-cg";
+                var basecode = '';
+                basecode += '<div class="search-result-show"></div>';
+                basecode += '<li class="list" data-cgid="1" data-cgnum="01" data-cgname="化学原料">\
+                    <span class="title-first" data-has-data="0" data-cgid="1">第<i class="color">01</i>类 化学原料</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="952" data-cgnum="02" data-cgname="颜料油漆">\
+                    <span class="title-first" data-has-data="0" data-cgid="952">第<i class="color">02</i>类 颜料油漆</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="1102" data-cgnum="03" data-cgname="日化用品">\
+                    <span class="title-first" data-has-data="0" data-cgid="1102">第<i class="color">03</i>类 日化用品</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="1415" data-cgnum="04" data-cgname="燃料油脂">\
+                    <span class="title-first" data-has-data="0" data-cgid="1415">第<i class="color">04</i>类 燃料油脂</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="1552" data-cgnum="05" data-cgname="医药">\
+                    <span class="title-first" data-has-data="0" data-cgid="1552">第<i class="color">05</i>类 医药</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="2028" data-cgnum="06" data-cgname="金属材料">\
+                    <span class="title-first" data-has-data="0" data-cgid="2028">第<i class="color">06</i>类 金属材料</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="2533" data-cgnum="07" data-cgname="机械设备">\
+                    <span class="title-first" data-has-data="0" data-cgid="2533">第<i class="color">07</i>类 机械设备</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="3596" data-cgnum="08" data-cgname="手工器械">\
+                    <span class="title-first" data-has-data="0" data-cgid="3596">第<i class="color">08</i>类 手工器械</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="10455" data-cgnum="09" data-cgname="科学仪器">\
+                    <span class="title-first" data-has-data="0" data-cgid="10455">第<i class="color">09</i>类 科学仪器</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="3900" data-cgnum="10" data-cgname="医疗器械">\
+                    <span class="title-first" data-has-data="0" data-cgid="3900">第<i class="color">10</i>类 医疗器械</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="4137" data-cgnum="11" data-cgname="灯具空调">\
+                    <span class="title-first" data-has-data="0" data-cgid="4137">第<i class="color">11</i>类 灯具空调</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="4533" data-cgnum="12" data-cgname="运输工具">\
+                    <span class="title-first" data-has-data="0" data-cgid="4533">第<i class="color">12</i>类 运输工具</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="4874" data-cgnum="13" data-cgname="军火烟火">\
+                    <span class="title-first" data-has-data="0" data-cgid="4874">第<i class="color">13</i>类 军火烟火</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="4970" data-cgnum="14" data-cgname="珠宝钟表">\
+                    <span class="title-first" data-has-data="0" data-cgid="4970">第<i class="color">14</i>类 珠宝钟表</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="5083" data-cgnum="15" data-cgname="乐器">\
+                    <span class="title-first" data-has-data="0" data-cgid="5083">第<i class="color">15</i>类 乐器</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="5184" data-cgnum="16" data-cgname="办公用品">\
+                    <span class="title-first" data-has-data="0" data-cgid="5184">第<i class="color">16</i>类 办公用品</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="5663" data-cgnum="17" data-cgname="橡胶制品">\
+                    <span class="title-first" data-has-data="0" data-cgid="5663">第<i class="color">17</i>类 橡胶制品</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="5824" data-cgnum="18" data-cgname="皮革皮具">\
+                    <span class="title-first" data-has-data="0" data-cgid="5824">第<i class="color">18</i>类 皮革皮具</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="5961" data-cgnum="19" data-cgname="建筑材料">\
+                    <span class="title-first" data-has-data="0" data-cgid="5961">第<i class="color">19</i>类 建筑材料</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="6281" data-cgnum="20" data-cgname="家具">\
+                    <span class="title-first" data-has-data="0" data-cgid="6281">第<i class="color">20</i>类 家具</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="6640" data-cgnum="21" data-cgname="厨房洁具">\
+                    <span class="title-first" data-has-data="0" data-cgid="6640">第<i class="color">21</i>类 厨房洁具</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7054" data-cgnum="22" data-cgname="绳网袋蓬">\
+                    <span class="title-first" data-has-data="0" data-cgid="7054">第<i class="color">22</i>类 绳网袋蓬</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7179" data-cgnum="23" data-cgname="纱线丝">\
+                    <span class="title-first" data-has-data="0" data-cgid="7179">第<i class="color">23</i>类 纱线丝</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7234" data-cgnum="24" data-cgname="布料床单">\
+                    <span class="title-first" data-has-data="0" data-cgid="7234">第<i class="color">24</i>类 布料床单</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7413" data-cgnum="25" data-cgname="服装鞋帽">\
+                    <span class="title-first" data-has-data="0" data-cgid="7413">第<i class="color">25</i>类 服装鞋帽</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7637" data-cgnum="26" data-cgname="钮扣拉链">\
+                    <span class="title-first" data-has-data="0" data-cgid="7637">第<i class="color">26</i>类 钮扣拉链</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7796" data-cgnum="27" data-cgname="地毯席垫">\
+                    <span class="title-first" data-has-data="0" data-cgid="7796">第<i class="color">27</i>类 地毯席垫</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7825" data-cgnum="28" data-cgname="健身器材">\
+                    <span class="title-first" data-has-data="0" data-cgid="7825">第<i class="color">28</i>类 健身器材</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="7956" data-cgnum="29" data-cgname="食品">\
+                    <span class="title-first" data-has-data="0" data-cgid="7956">第<i class="color">29</i>类 食品</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="8423" data-cgnum="30" data-cgname="方便食品">\
+                    <span class="title-first" data-has-data="0" data-cgid="8423">第<i class="color">30</i>类 方便食品</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="8797" data-cgnum="31" data-cgname="农林生鲜">\
+                    <span class="title-first" data-has-data="0" data-cgid="8797">第<i class="color">31</i>类 农林生鲜</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="8983" data-cgnum="32" data-cgname="啤酒饮料">\
+                    <span class="title-first" data-has-data="0" data-cgid="8983">第<i class="color">32</i>类 啤酒饮料</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9051" data-cgnum="33" data-cgname="酒">\
+                    <span class="title-first" data-has-data="0" data-cgid="9051">第<i class="color">33</i>类 酒</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9091" data-cgnum="34" data-cgname="烟草烟具">\
+                    <span class="title-first" data-has-data="0" data-cgid="9091">第<i class="color">34</i>类 烟草烟具</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9138" data-cgnum="35" data-cgname="广告销售">\
+                    <span class="title-first" data-has-data="0" data-cgid="9138">第<i class="color">35</i>类 广告销售</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9261" data-cgnum="36" data-cgname="金融物管">\
+                    <span class="title-first" data-has-data="0" data-cgid="9261">第<i class="color">36</i>类 金融物管</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9360" data-cgnum="37" data-cgname="建筑修理">\
+                    <span class="title-first" data-has-data="0" data-cgid="9360">第<i class="color">37</i>类 建筑修理</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9514" data-cgnum="38" data-cgname="通讯服务">\
+                    <span class="title-first" data-has-data="0" data-cgid="9514">第<i class="color">38</i>类 通讯服务</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9556" data-cgnum="39" data-cgname="运输贮藏">\
+                    <span class="title-first" data-has-data="0" data-cgid="9556">第<i class="color">39</i>类 运输贮藏</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9674" data-cgnum="40" data-cgname="材料加工">\
+                    <span class="title-first" data-has-data="0" data-cgid="9674">第<i class="color">40</i>类 材料加工</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9813" data-cgnum="41" data-cgname="教育娱乐">\
+                    <span class="title-first" data-has-data="0" data-cgid="9813">第<i class="color">41</i>类 教育娱乐</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="9945" data-cgnum="42" data-cgname="科技服务">\
+                    <span class="title-first" data-has-data="0" data-cgid="9945">第<i class="color">42</i>类 科技服务</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="10041" data-cgnum="43" data-cgname="餐饮住宿">\
+                    <span class="title-first" data-has-data="0" data-cgid="10041">第<i class="color">43</i>类 餐饮住宿</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="10080" data-cgnum="44" data-cgname="医疗园艺">\
+                    <span class="title-first" data-has-data="0" data-cgid="10080">第<i class="color">44</i>类 医疗园艺</span>\
+                    </li>';
+                basecode += '<li class="list" data-cgid="10150" data-cgnum="45" data-cgname="社会服务">\
+                    <span class="title-first" data-has-data="0" data-cgid="10150">第<i class="color">45</i>类 社会服务</span>\
+                    </li>';
+                $(".brandInfo-wrap .section-selfchoice .group-left .group").html(basecode);
+                if(keys!=""){
+                    $(".brandInfo-wrap .section-selfchoice .group-left .scroll").animate({
+                        scrollTop:0
+                    }, 0);
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        data: {keys:keys},
+                        url: getCgFromSouUrl,
+                        success: function(msg) {
+                            if(msg.status){
+                                var alldata = msg.msg;
+                                if(isEmptyObject(alldata)){
+                                    layer.msg("没有包含关键词的规范商品");
+                                }else{
+                                }
+                                var firstcgid = "";
+                                var secondList = '';
+                                var thirdList = "";
+                                var _insert = "";
+                                $.each(alldata, function(i){
+                                    firstcgid = alldata[i]['fcgid'];
+                                    secondList = alldata[i]['flist'];
+                                    _insert = "";
+                                    _insert += '<span class="title-first" data-has-data="1" data-cgid="'+alldata[i]['fcgid']+'">第<i class="color">'+alldata[i]['fcgnum']+'</i>类 '+alldata[i]['fcgname']+'</span>';
+                                    $.each(secondList,function(j){
+                                        thirdList = secondList[j]['flist'];
+                                        _insert += '<div class="title-second open">\
+                                        <span class="second-lg" data-has-data="1" data-cgnum="'+secondList[j]['fcgnum']+'" data-cgname="'+secondList[j]['fcgname']+'" data-cgid="'+secondList[j]['fcgid']+'">'+secondList[j]['fcgnum']+' '+secondList[j]['fcgname']+'</span>\
+                                        <dl class="second-sm">';
+                                        thirdList = sortNice(thirdList);
+                                        $.each(thirdList,function(z){
+                                            _insert += '<dt class="row" data-cgid="'+thirdList[z]['fcgid']+'" data-cgnum="'+thirdList[z]['fcgnum']+'" data-cgname="'+thirdList[z]['fcgname']+'" ><i class="iconfont icon-jiahao"></i><span class="text">'+thirdList[z]['fcgnum']+'  '+thirdList[z]['fcgname']+'</span></dt>';
+                                        });
+                                        _insert += '<dt class="get-all-small">展开全部子项</dt>'
+                                        _insert += '</dl></div>';
+                                    });
+                                    _insert += '<div class="title-second"><span class="get-all-second">展开全部群组</span></div>';
+                                    $(".brandInfo-wrap .section-selfchoice .group-left .list[data-cgid='"+firstcgid+"']").html(_insert);
+//                              $(".brandInfo-wrap .section-selfchoice .group-left .list[data-cgid='"+firstcgid+"']").insertBefore($(".brandInfo-wrap .section-selfchoice .group-left .list").eq(0));
+                                    $(".search-result-show").append($(".brandInfo-wrap .section-selfchoice .group-left .list[data-cgid='"+firstcgid+"']"));
+                                    $(".brandInfo-wrap .section-selfchoice .group-left .list[data-cgid='"+firstcgid+"']").addClass('open');
+                                    checkSecondSm();
+                                });
+                            }else{
+                                layer.msg("似乎出了点问题，请稍后重试");
+                            }
+                        },
+                        error: function(){
+                            layer.msg('加载数据失败');
+                        }
+                    })
+                }else{
+                    $(".noshangping").hide();
+                }
+            });
+
+            // 回车搜索
+            $("input[name=keys]").bind("keyup", function(e){
+                if (e.keyCode == 13) {
+                    $("#btn-search").click();
+                }
+            })
+            //尼斯分类搜索结果点击获取全部二级分类
+            $(document).on("click", ".get-all-second", function() {
+                var _this = $(this);
+                var searchResult = _this.parents(".title-second").siblings(".title-second");
+                if(!_this.hasClass("has-get-all")) {
+                    _this.addClass("has-get-all");
+                    var pid = _this.parents(".list").attr("data-cgid");
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        data: {
+                            pid: pid
+                        },
+                        url: getcglistUrl,
+                        success: function(msg) {
+                            if(msg.status) {
+                                console.log(msg);
+                                var alldata = msg.msg;
+                                var _insertList = "";
+                                for(var i = 0; i < alldata.length; i++) {
+                                    _insertList += '<div class="title-second">\
+                        <span class="second-lg" data-has-data="0" data-cgnum="' + alldata[i]['fcgnum'] + '" data-cgname="' + alldata[i]['fcgname'] + '" data-cgid="' + alldata[i]['fcgid'] + '">' + alldata[i]['fcgnum'] + ' ' + alldata[i]['fcgname'] + '</span>\
+                        <dl class="second-sm">\
+                        </dl>\
+                        </div>';
+                                }
+                                var _insert = '<div class="all-data-container">' + _insertList + '</div>';
+                                _this.before(_insert);
+//						searchResult.hide();
+                                _this.addClass("open");
+                                _this.text("关闭全部群组");
+                            } else {
+                                alert("似乎出了点问题，请稍后重试");
+                            }
+                        },
+                        error: function(e) {
+                            console.log(e);
+                            alert('加载数据失败');
+                        }
+                    })
+                } else {
+                    if(_this.hasClass("open")) {
+                        searchResult.show();
+                        _this.parents(".title-second").find(".all-data-container").hide();
+                        _this.removeClass("open");
+                        _this.text("展开全部群组");
+                    } else {
+                        searchResult.hide();
+                        _this.parents(".title-second").find(".all-data-container").show();
+                        _this.addClass("open");
+                        _this.text("关闭全部群组");
+                    }
+                }
+            })
+
+            //尼斯分类搜索结果点击获取全部小类
+            $(document).on("click", ".get-all-small", function() {
+                var _this = $(this);
+//            var cgName = $(this).parents(".list").attr("data-cgname");
+                var cgName = '';
+                var searchResult = _this.siblings(".row");
+                if(!_this.hasClass("has-get-all")) {
+                    _this.addClass("has-get-all");
+                    var pid = _this.parents(".title-second").find(".second-lg").attr("data-cgid");
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        data: {
+                            pid: pid
+                        },
+                        url: getcglistUrl,
+                        success: function(msg) {
+                            if(msg.status) {
+                                var alldata = msg.msg;
+                                //数据数组重排
+                                alldata = sortNice(alldata);
+                                var _insertList = "";
+                                for(var i = 0; i < alldata.length; i++) {
+                                    _insertList += '<dt class="row" data-cgparent="' + alldata[i]['fcgparent'] + '" data-cgid="' + alldata[i]['fcgid'] + '" data-cgnum="' + alldata[i]['fcgnum'] + '" data-cgname="' + alldata[i]['fcgname'] + '" ><i class="iconfont icon-jiahao"></i><span class="text">' + alldata[i]['fcgnum'] + '  ' + alldata[i]['fcgname'] + '</span></dt>';
+                                }
+                                var _insert = '<dl class="all-data-container">' + _insertList + '</dl>';
+                                _this.before(_insert);
+                                searchResult.hide();
+                                _this.addClass("open");
+                                _this.text("关闭全部子项");
+                                checkSecondSm();
+                            } else {
+                                alert("似乎出了点问题，请稍后重试");
+                            }
+                        },
+                        error: function(e) {
+                            console.log(e);
+                            alert('加载数据失败');
+                        }
+                    })
+                } else {
+                    if(_this.hasClass("open")) {
+                        searchResult.show();
+                        $(".all-data-container").hide();
+                        _this.removeClass("open");
+                        _this.text("展开全部子项");
+                    } else {
+                        searchResult.hide();
+                        $(".all-data-container").show();
+                        _this.addClass("open");
+                        _this.text("关闭全部子项");
+                    }
+                }
+            })
+        });
+
+    </script>
+    <div class="page-hot w-center" style="position: relative">
+        <div class="hot-brand hot-brand-right" style="display: none" data-type="1">
+            <h2>相关商标出售</h2>
+            <ul class="loading">
+            </ul>
+            <a class="more hide" href="javascript:;">查看更多&gt;&gt;</a>
+        </div>
+        <link rel="stylesheet" type="text/css"
+              href="https://so.quandashi.com/home/swiper/css/swiper-3.4.2.min.css?3.3" />
+        <script type="text/javascript" src="https://so.quandashi.com/home/swiper/js/swiper-3.4.2.min.js?3.3">
+        </script>
+
+        <script>
+            //document.domain = '//';
+            $(document).ready(function () {
+                getSimilarBrand();
+                $(document).on("click", ".hot-brand .hot-brand-detail .button", function () {
+                    consultationBrand(this);
+                });
+                //热门商标切换
+                var mySwiper = new Swiper('.swiper-container', {
+                    prevButton: '.swiper-button-prev',
+                    nextButton: '.swiper-button-next'
+                });
+                //商标填写
+                var flag = true;
+                var timeout;
+
+                $("#key").on('compositionstart', function () {
+                    flag = false;
+                });
+                $("#key").on('compositionend', function () {
+                    flag = true;
+                });
+
+                $("#key").bind('input keyup', function () {
+                    if (flag) {
+                        var brandName = $(this).val();
+                        if (brandName != "") {
+                            clearTimeout(timeout);
+                            timeout = setTimeout(function () {
+                                getSimilarBrand();
+                            }, 1000);
+                        }
+                    }
+                });
+
+            });
+
+            //我要咨询,赋值
+            function consultationBrand(el) {
+                var brand = $(el).parents("li");
+                var order_come = brand.find("[name=order_come]").val();
+                var b_name = brand.find(".hot-brand-name").text();
+                var b_category = brand.find(".hot-brand-category").text();
+                var b_price = brand.find(".hot-brand-price i").text();
+                var account = "";
+
+                var fbrandId = brand.find("[name=dataId]").val();
+                var typeCode = brand.find("[name=typeCode]").val();
+                var fapplicateCode = brand.find("[name=fapplicateCode]").val();
+                var serviceItems = brand.find("[name=serviceItems]").val();
+
+
+                //商标咨询弹框
+                var consultationModal = layer.open({
+                    type: 2,
+                    title: '商标咨询',
+                    area: ['600px', '600px'],
+                    content: '/search/search/brand-consult?fbrandId=' + fbrandId +
+                        '&forderCome=' + order_come + '&account=' + account + '&typeCode=' + typeCode +
+                        '&brandName=' + b_name + '&typeName=' + b_category + '&brandPrice=' + b_price +
+                        '&fapplicateCode=' + fapplicateCode + '&serviceItems=' + serviceItems
+                });
+            }
+
+            var searched_name = "";
+            var searched_categories = "";
+
+            //获取相关商标
+            function getSimilarBrand() {
+                var brandName = key;
+                var c_ids = searchListVUE.selectedCategories;
+                var brand_name;
+                if (brandName != null) {
+                    brand_name = brandName;
+                }
+                searched_name = brand_name;
+                searched_categories = c_ids;
+                $.ajax({
+                    url: "/search/search/get-brands",
+                    data: {
+                        fapplicate_code: brand_name,
+                        ftype: c_ids
+                    },
+                    type: "get",
+                    dataType: "json",
+                    success: function (res) {
+                        if (res.status) {
+                            var items_arr = res.data.data.list;
+                            var order_come = res.data.data.type;//1热门2相似
+                            order_come = order_come == 1 ? 2 : 1;
+                            var html = "";
+                            for (var i = 0; i < items_arr.length; i++) {
+                                var items = items_arr[i];
+                                var li = '<li>' +
+                                    '<input type="hidden" name="dataId" value="' + items.id + '">' +
+                                    '<input type="hidden" name="order_come" value="' + order_come + '">' +
+                                    '<input type="hidden" name="typeCode" value="' + items.applicationCategory + '">' +
+                                    '<input type="hidden" name="fapplicateCode" value="' + items.applicationNumber + '">' +
+                                    '<input type="hidden" name="serviceItems" value="' + items.serviceItem + '">' +
+                                    '<div class="hot-brand-image">' +
+                                    '<img src="https://tm-images.oss-cn-beijing.aliyuncs.com/jpg/' + items.img + '">' +
+                                    '</div>' +
+                                    '<div class="hot-brand-detail">' +
+                                    '<h6 class="hot-brand-name" title="' + items.name + '">' + items.name + '</h6>' +
+                                    '<span class="hot-brand-category">' + items.applicationCategory + '类 ' + items.applicationName + '</span>' +
+                                    '<strong class="hot-brand-price">￥<i>' + (items.platformPrice / 100) + '</i></strong>' +
+                                    '<a href="javascript:void(0)" class="button" >我有兴趣</a>' +
+                                    '</div>' +
+                                    '</li>';
+                                html += li;
+                                if (i >= 3) {
+                                    break;
+                                }
+                            }
+                            if (order_come == 2) {
+                                $(".hot-brand-right h2").html('热门商标出售');
+                            }
+                            $(".hot-brand-right ul").html(html);
+                            $(".hot-brand-right ul").removeClass('loading');
+                            if (items_arr.length > 4) {
+                                $(".hot-brand-right .more").removeClass('hide');
+                                $(".hot-brand-right .more").attr('href', '/sbjiaoyi/' + res.data.key + '.html');
+                            }
+                        }
+                    }
+                })
+            }
+
+            function getHotbrand() {
+                if (!hotbrand_complete) {
+                    setTimeout(function () {
+                        getHotbrand();
+                    }, 500);
+                } else {
+                    $(".hot-brand-right h2").html('热门商标出售');
+                    $(".hot-brand-right").attr('data-type', 2);
+                    var hot_li = $('.hot-brand-bottom .swiper-slide').eq(0).find('li').slice(0, 4).clone();
+                    setTimeout(function () {
+                        $(".hot-brand-right ul").html(hot_li);
+                    }, 200);
+
+                }
+            }
+
+        </script>
+    </div>
+    <!-- from表单 -->
+    <form style="display:none" method="post" id="myform" target="_blank"
+          action="https://www.quandashi.com/brand-monitor/add-task">
+        <input type="text" id="applyNum" name="applyNum">
+        <input type="text" id="applyid" name="category[]">
+        <input type="submit">
+    </form>
+    <!-- from表单 -->
+
+    <script type="text/x-template" id="page">
+        <ul class="pagination-in" >
+            <li v-show="current != 1" @click="current-- && goto(current--)" ><a href="#"><</a></li>
+            <li v-for="index in changepage" @click="goto(index)" :class="{'active':current == index}" :key="index">
+                <a href="#" :data-value="index - 1">{{index}}</a>
+            </li>
+            <li v-show="allpage != current" @click="current++ && goto(current++)">
+                <a href="#" >></a>
+            </li>
+            <li class="go-page">
+                跳转 <input type="number" class="text" v-model="gopage" @keyup.enter="goto(gopage)" value=""> 页
+                <a href="#" class="button" @click="goto(gopage)">确定</a>
+            </li>
+        </ul>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            /* 跳转详情 */
+//        $(document).on("click", ".brand-info-in li", function () {
+//            var id = $(this).parents(".brand-info-in").attr("data-id");
+//            var flag = $(this).parents(".brand-info-in").attr("data-flag");
+//            window.open('///' + id + '.html?type_flag=' + flag);
+//        })
+            /* 监控商标 */
+            searchListVUE.monitorBrand = function(e) {
+                $this = $(e.currentTarget);
+                searchListVUE.brandFollow(e);
+                $.confirm({
+                    opacity: true,
+                    content: '您确定要监控此商标吗？',
+                    okFun: function () {
+                    }
+                });
+            }
+            /* 购买商标 */
+            searchListVUE.buyBrand = function(e) {
+                searchListVUE.brandBuy(e, '列表页');
+                $this = $(e.currentTarget);
+                var _id = $this.attr('data-dataId');
+                var _names = $this.attr('data-name');
+                var _typeid = $this.attr('data-typeCode');
+                var b_price = 0;
+
+                var $list = $this.closest('li');
+                var btype = $list.find('.td-btype').text();
+
+                var order_come = '4';
+                var b_name = _names;
+                var b_category = btype;
+                var account = "";
+
+                var fbrandId = _id;
+                var typeCode = _typeid;
+                var fapplicateCode = _id;
+
+                $("#consultationModal").find("[name=order_come]").val(order_come);
+                $("#consultationModal").find("[name=name]").val(b_name);
+                $("#consultationModal").find("[name=category]").val(b_category);
+
+                //商标咨询弹框
+                var consultationModal = layer.open({
+                    type: 2,
+                    title: '商标咨询',
+                    area: ['600px', '600px'],
+                    content: '/search/search/brand-consult?fbrandId=' + fbrandId +
+                        '&forderCome=' + order_come + '&account=' + account + '&typeCode=' + typeCode +
+                        '&brandName=' + b_name + '&typeName=' + b_category + '&brandPrice=' + b_price +
+                        '&fapplicateCode=' + fapplicateCode
+                });
+            }
+
+            //神策
+            $(document).on("click", ".brand-status .status2", function (e) {
+                e.preventDefault();
+                var index = $(this).parents("li").index();
+                var href = $(this).attr("href");
+                var businessType = $(this).text();
+                searchListVUE.brandBusiness(index, businessType);
+                window.open(href);
+            })
+        })
+    </script>
+    <script src="/static/search/js/page.js?3.3"></script>
+    <script src="/static/search/js/searchlist.js?3.3"></script>
+    <script src="/home/js/gt.js?3.3"></script>
+    <script src="/home/js/jquery.confirm-1.0.js?3.3"></script>
+    <script src="/home/js/imgSearch.js?3.3"></script> <!-- start 右侧悬浮 -->
+    <div class="public-fixrightbar">
+        <ul class="item">
+            <li class="list list-ad">
+                <a class="i-title" href="https://so.quandashi.com/zhuanti/hhr" target="_blank">
+                    <span class="show">合伙人计划</span>
+                    <span>轻松赚高薪</span>
+                </a>
+            </li>
+            <li class="list zixun">
+                <span class="i-title">咨询 · 反馈</span>
+                <div class="bdoyer">
+                    <dl onclick="NTKF.im_openInPageChat('kf_9479_1482483215983')">
+                        <dt><img src="/images6/icon14.png"></dt>
+                        <dd>
+                            <h6>售前咨询</h6>
+                            <p>商标、专利、版权业务</p>
+                        </dd>
+                    </dl>
+                    <dl onclick="NTKF.im_openInPageChat('kf_9479_1531374441353')">
+                        <dt><img src="/images6/icon15.png"></dt>
+                        <dd>
+                            <h6>售后服务</h6>
+                            <p>业务进度、官文与发票业务</p>
+                        </dd>
+                    </dl>
+                    <dl onclick="NTKF.im_openInPageChat('kf_9479_1483009915257')">
+                        <dt><img src="/images6/icon16.png"></dt>
+                        <dd>
+                            <h6>合伙人专线</h6>
+                            <p>合伙人服务专线</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/images6/icon17.png"></dt>
+                        <dd>
+                            <h6>服务热线</h6>
+                            <p class="color">400-9988-211</p>
+                        </dd>
+                    </dl>
+                    <dl onclick="NTKF.im_openInPageChat('kf_9479_1483009915257')">
+                        <dt><img src="/images6/icon18.png"></dt>
+                        <dd>
+                            <h6>意见反馈</h6>
+                            <p>投诉、建议</p>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="list backtop"><a class="i-title" href="#" title="顶部"></a></li>
+        </ul>
+    </div>
+</div>
+<!-- start 公用知识产权工具 -->
+<div id="websiteTools">
+    <i class="opacity"></i>
+    <div class="cont">
+        <i class="icon-close"></i>
+        <h3 class="cont-header"><span>相关知识产权服务<i class="icon"></i></span></h3>
+        <ul class="items">
+            <li class="menu">
+                <a target="_blank" href="https://so.quandashi.com/">
+                    <i class="icon icon-tools-sssearch"></i>
+                    <span class="icon-text">商标搜索</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a target="_blank" href="https://www.quandashi.com/product-buy/PC10003.html">
+                    <i class="icon icon-tools-znzc"></i>
+                    <span class="icon-text">智能自助注册</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a target="_blank" href="https://so.quandashi.com/index/nisi" onclick="index_sc.goNice()">
+                    <i class="icon icon-tools-dzdj"></i>
+                    <span class="icon-text" style="padding-left: 4px;">商标分类查询</span>
+                </a>
+            </li>
+            <br/>
+            <li class="menu" style="margin-left: -12px;">
+                <a target="_blank" href="https://www.quandashi.com/brand-monitor/index">
+                    <i class="icon icon-tools-sbjk"></i>
+                    <span class="icon-text" style="padding-left: 8px;">商标监控</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a target="_blank" href="https://www.quandashi.com/brandmanage/index">
+                    <i class="icon icon-tools-sbmanage"></i>
+                    <span class="icon-text" style="padding-left: 8px;">商标管理</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a target="_blank" href="https://so.quandashi.com/search/notice/index"
+                   onclick="index_sc.goNotice()">
+                    <i class="icon icon-tools-csgg"></i>
+                    <span class="icon-text" style="padding-left: 8px;">初审公告</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end 公用知识产权工具 -->
+<div style="display:none">
+    <a href='https://so.quandashi.com/shangbiao/'>商标详情页</a>
+    <a href='https://so.quandashi.com/'>商标注册查询</a>
+</div>
+
+<form action="/graph/search" method="post" id="submitGraphsearch">
+    <input type="hidden" name="imageData" id="imageData">
+    <input type="hidden" name="position" id="position">
+    <input type="hidden" name="category" id="category">
+    <input type="hidden" name="year" id="year">
+    <input type="hidden" name="status" id="status">
+    <input type="hidden" name="cartoon" id="cartoon">
+    <input type="hidden" name="iscolor" id="color">
+</form>
+<div class="showImgModal" id="showImgModal" style="display: none;">
+    <div class="cutImageBox" style="height: 430px;">
+        <img class="cutImage" id="cutImage" src="">
+    </div>
+    <div class="cartoon-box">
+        <label class="checkbox-box">
+            <label class="checkbox">
+                <input type="checkbox" id="iscartoon">
+            </label>
+            <span>卡通形象</span>
+        </label>
+        <label class="checkbox-box">
+            <label class="checkbox checked">
+                <input type="checkbox" id="iscolor" checked="checked">
+            </label>
+            <span>黑白图样</span>
+        </label>
+    </div>
+    <div class="showImgModalBtns">
+        <a href="javascript:void(0)" class="button button-white" id="reselect-img">重新选择</a>
+        <a href="javascript:void(0)" class="button" id="submit-img">提交</a>
+    </div>
+</div>
+<script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9479"
+        charset="utf-8"></script>
+<script type="text/javascript">
+    // 神策
+    var index_sc = {
+        // 商品分类
+        goNice: function () {
+            var urlPath = location.href;
+            var searchName = '';
+            sc.click_events(sc.events.tradeMarkSearchClickNice, {
+                urlPath: urlPath,
+                isLogin: isLogin,
+                searchName: searchName
+            });
+        },
+        // 初审公告
+        goNotice: function () {
+            var urlPath = location.href;
+            var searchName = '';
+            sc.click_events(sc.events.tradeMarkSearchClickPublication, {
+                urlPath: urlPath,
+                isLogin: isLogin,
+                searchName: searchName
+            });
+        }
+    };
+    $(function(e) {
+        //伸缩
+        $('#rightFixBar #flex').on('click', function(){
+            var ismore = $(this).hasClass('more');
+            $('#rightFixBar')[ismore?'removeClass':'addClass']('hide');
+            $(this)[ismore?'removeClass':'addClass']('more');
+            $(this).find('.text').text([ismore?'收起':'展开']);
+        });
+        //返回顶部
+        $('#rightFixBar #backtop').on('click', function(){
+            $('html,body').animate({scrollTop:0});
+        });
+    });
+    $(function(){
+        $('.public-fixrightbar .list').on({
+            mouseenter: function(){
+                $(this).addClass('active');
+            },
+            mouseleave: function(){
+                $(this).removeClass('active');
+            }
+        });
+        //切换
+        setInterval(function () {
+            var hasClass = $(".list-ad .i-title span").eq(0).hasClass("show");
+            $(".list-ad .i-title span").eq(0)[hasClass?'removeClass':'addClass']('show');
+            $(".list-ad .i-title span").eq(1)[hasClass?'addClass':'removeClass']('show');
+        }, 3000)
+    });
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //图形搜索
+    var base64_url = "/graph/getimg";
+    var getMore_url = "/graph/getpage-graph";
+    var graph_url = "https://tm-images.oss-cn-beijing.aliyuncs.com/jpg/";
+    var mark = 0;
+    if(mark==1){
+        var img_iframe = document.getElementById("imgData");
+        localStorage.removeItem("category");
+        localStorage.removeItem("status");
+        localStorage.removeItem("year");
+        img_iframe.onload = function () {
+            var frame_img = $("#imgData").contents().find("#img");
+            var position = $("#imgData").contents().find("#position").val();
+            var cartoon = $("#imgData").contents().find("#cartoon").val();
+            var color = $("#imgData").contents().find("#color").val();
+            var filename = $("#imgData").contents().find("#filename").val();
+            var imgData = frame_img.attr("src");
+            $("#thumbnail img").attr("src", imgData);
+            localStorage.setItem('fileurl', imgData);
+            $("#thumbnail .text").text(filename);
+            $("#search-img").find("img").attr("src", imgData);
+            localStorage.setItem("position", position);
+            localStorage.setItem("cartoon", cartoon);
+            localStorage.setItem("color", color);
+            localStorage.setItem("filename", filename);
+        }
+    }
+    /*知识产权工具*/
+    $(function(){
+        $('.user-account').mouseenter(function(){
+            $(this).addClass('open');
+        }).mouseleave(function(){
+            $(this).removeClass('open');
+        });
+        /*显示窗口*/
+        $('.top-nav .tools').on({
+            'click': function(){
+                $('#websiteTools').addClass('show');
+            }
+        });
+        /*关闭窗口*/
+        $('#websiteTools .icon-close').on({
+            'click': function(){
+                $('#websiteTools').removeClass('show');
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

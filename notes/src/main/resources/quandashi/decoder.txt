@@ -1,0 +1,45 @@
+基本信息 请求 GET https://so.quandashi.com/search/search/get-brands?fapplicate_code=1&ftype=
+
+ajax: function (params, method, callback, fail, type) {
+        if(type == null){
+            type = 'post';
+        }
+        $.ajax({
+            url: searchApi + method,
+            data: params,
+            type: type,
+            dataType: 'json',
+            success: function (res) {
+                callback(res);
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    },
+================common.ajax====================
+1.  请求 POST https://so.quandashi.com/search/search/search-list
+    提交参数 key : 搜索key
+    返回结果: {"status":1,"msg":"\u83b7\u53d6\u6210\u529f","data":{"yanzflag":null,"noLogin":true,"appkeys":"","userip":"101.95.131.186"}}
+    geeTest(userip, appkeys, keyWords) [appkeys=""]
+2.  请求 GET https://so.quandashi.com/index/abc?t=q23123 (t为随机数)
+    {"success":1,"gt":"e42b49a44ca730f180c477376e52ef9a","challenge":"66087e8f8686a9d1a02a0d32e1a5bd50"}
+
+3.  调用initGeetest
+    gt: data.gt,
+    challenge: data.challenge,
+    offline: !data.success, // 表示用户后台检测极验服务器是否宕机
+    new_captcha: data.new_captcha, // 用于宕机时表示是新验证码的宕机 undefine
+    product: "bind", // 产品形式，包括：float，popup
+    width: "300px"
+
+4.  请求 GET https://api.geetest.com/gettype.php?gt=e42b49a44ca730f180c477376e52ef9a
+    {"status": "success", "data": {"static_servers": ["static.geetest.com/", "dn-staticdown.qbox.me/"], "voice": "/static/js/voice.1.2.0.js", "click": "/static/js/click.2.8.5.js", "fullpage": "/static/js/fullpage.8.8.3.js", "slide": "/static/js/slide.7.6.3.js", "type": "fullpage", "geetest": "/static/js/geetest.6.0.9.js", "aspect_radio": {"voice": 128, "beeline": 50, "pencil": 128, "slide": 103, "click": 128}, "pencil": "/static/js/pencil.1.0.3.js", "beeline": "/static/js/beeline.1.0.1.js", "maze": "/static/js/maze.1.0.1.js"}}
+
+5.  请求 GET https://static.geetest.com/static/js/fullpage.8.8.3.js
+
+6.  请求 GET https://api.geetest.com/get.php?gt=e42b49a44ca730f180c477376e52ef9a&challenge=66087e8f8686a9d1a02a0d32e1a5bd50&lang=zh-cn&pt=0&w=Mfzz9rJ0zMdoR(GL(wwPe0an)za614eG(XhiRwO5pE3atGB2z1gutwp)mmj)6JF7ZdtUDAW7rxI7gR(96LhxzarFhFCIt7amWdQM7wWsGtdU70b9udZH0k8QOfies5FGO9o1Xfc)5iFwgQtBKQ44)gDUxsNmQ)XfRgkMf6tAmM8Dl(y(xAxc5Lo09y4jasjSjTA05oSYxlHkSnBC0ytS)QrX93sE955tK1KYg5h3kI1Yhk9)DHD5H7wNWe3A6DaytceKmZycdoN2kS4yuCc)Sfv3fqMn0BdwIoam)LktoIpXQUuLAWQYw(EhCl1vHcleTgXvU(69sRs9sJRKPuO9Tz3qAcHJNsRC42hIpjwJV3SE(Vib7i1Ctm)ibDy8f4bTB(tm6V2)LtqFhAUoRf8mTmxRZ0AMhGgM7YL(bkxOvMZJ4Dodq69uWD9h6R43SW96h33liFGHWM8V0(b9HfyaGPt3FAASbbqKpnPENP5xmYR5aIWQVK8uSOO53(iDpzTGaW(b7yQa4gfDjrgtwp(hwAgU4NUfJgelu6IIy2wLL8)pSIM7CxJkq)8tf(Mm1gaK)jqMv)9vLISn3bE7rsUl4Y(CbxEXiXOB1B5OEPYBchbhXF33IOXA(KRo1js1y21UG(XRpbu6LW4I(7U)LmWgRwAO91nbpDxSqQtnInMuptlFDi18dF4sKqXbPz2hrMH1vQmVAmhBnlZ5h(9njBbDH5qwJz)TzE7DEXSjnCSpo7FGwuGNM4xsQkFXniPvI5HF9znkqBVutfQ8L8yV0Lx98ys65EHf0SpV7gAJ0VMk5DigXYKHaQ4D)vam(dzyZAIjf8QR1Lw5zjVKR028sWy8pni3BJAUVJ)wGIInE6UzR5MzJi2fEQbxX62YE8(Il(ZGnySu1(6gr39cZPXJdjIqIP8CAKOcZx84VASjJQZDBtqN3EDTV2LxBktS(2pp5k0h7Yt0Zqrzmz5YxPHvxtP8)83cglFsmcP)LX4dUmzH5YrL24OfbAPOD6HhezesvU5Sam3he0KECtkN2b1W5D3Ng0A3dFVFJIbl5VbxfJO)c4FUJk3U5tdtGMUtm5rKFfOMVXvbC7QRE4PAU6rpq9ri5Ht1uDXeSwc9SY9pBcXvPCunI8D8dM39()rTopwvz3k)llR(KsB8W1Yzr5RQLjRyL1yHi2g3mRkCE5SDCUevlDDODn0Gd2dieCpst71Qmk1XMrD2p9Kmxv(UjSqGnfNJ0oYOxDRs5xReCu5qcu6PIIlDAnbEKOps9yquIBEUq(3J0OEgbiuz1j2lkUkFvqFoTbNAHZunddF3lrz9zrfDLUP)WO0dVC9wisAQDozAqrsgb9KchMb5O55rxhsr3uOztxb(1a880OAPB(iNCTWDzXzWnlJl0XV3TtPwxzVB7G9C3zCjAcVPIPPigaVDcScrCH0Bv5abNZSMggNqTa8ERg2V37CI7ruM1MJQeAmjDe1YlrskVzCWTaqP5w84MXc2m(n0AbXoT7ZErc(8a8tVo4FZ5gV28ClwyX3OxIf7ekoQzUPkUTRWjVI6KlXb)oM)rP1cRUSaPsRmWX6mXaiOg2IKDzbpqc(JU0mmFM8kQsIXdOKnT)KARlfTmbpwocBjc1x8MsXnkTpE94DI8hJdx1OmbKuekPYKib5e9x9cQfpnHMig7)9icxoywX6WKb05mWaz1x61asWYLVK0blN857bAQD5bUX4tPhe8j5WFb6JHGccHPxBV6ZcAEf1YIfk3o6m94DabI9B0KQ0APeHNMEQ1aqE0lcgaYCYb79v85taT2DVIJXck1wPKI5BCxAcJAaiSmwFGR7UtrOPmiBMbwX5EG8OFzIm3AUcuWwiIHuZiRaAR6Ppyka4OoLNcOurYPdsCPQPo3REckKtOmqAGrNflLXweZhKAl5FP9oUpoPIth2NYpOiAjDvIzWgupawReVcMC7ID7Rq6qTf6IwoA01EoSLgUGBPEwq7vkwiPF()CJuT0bn)fF9pbRUE4xjGlPF7CYhxFCKCBeH6pzA6erx8bk3uO4t)yzXjZ6G3BxAP9af354819f50812df397e46bafcd09ae7172a655a3afad984a8f71f4b10566ce08f5ee39929eed1fec083d58d47b3f9481304d0c9af6160d388d08798efa0d9dbd8acf61e4a0099dd14acafbc7012ce4e4868c0a4c93d90372652d7679a04378e8377e42e2bfbc7babf9d0fa9047c90551c66de0ce570bf9a6532c4687cd045dd
+    {"status":"success","data":{"theme_version":"1.5.5","api_server":"api.geetest.com","static_servers":["static.geetest.com","dn-staticdown.qbox.me"],"feedback":"https://www.geetest.com/contact/#report","s":"2a417249","i18n_labels":{"goto_cancel":"取消","next_ready":"请完成验证","goto_homepage":"是否前往验证服务Geetest官网","goto_confirm":"前往","refresh_page":"页面出现错误啦！要继续操作，请刷新此页面","fullpage":"智能检测中","copyright":"由极验提供技术支持","loading_content":"智能验证检测中","reset":"请点击重试","success":"验证成功","error_content":"请点击此处重试","next":"正在加载验证","error_title":"网络超时","ready":"点击按钮进行验证","success_title":"通过验证","error":"网络不给力"},"logo":true,"theme":"wind","c":[12,58,98,36,43,95,62,15,12]}}
+
+7.  captchaObj.verify()
+

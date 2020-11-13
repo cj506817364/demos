@@ -1,0 +1,72 @@
+2019-07-31 22:04:09 [DEBUG](LogFactory                    ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Use [Slf4j] Logger As Default.
+2019-07-31 22:04:09 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:10 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:10 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:36 [DEBUG](LogFactory                    ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Use [Slf4j] Logger As Default.
+2019-07-31 22:04:36 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:36 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager is shutting down
+2019-07-31 22:04:37 [DEBUG](PoolingHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection manager shut down
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
+2019-07-31 22:04:37 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []

@@ -21,6 +21,7 @@
         <module>notes</module>
         <module>webmagic</module>
         <module>cdp4j</module>
+      <module>dt-all</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
  * @date 2019-08-01 11:32
  */
 @Slf4j
-@Component
+//@Component
 public class Spider implements ApplicationListener<ApplicationStartedEvent> {
 
     @Autowired

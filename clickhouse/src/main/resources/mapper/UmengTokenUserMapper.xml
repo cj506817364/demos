@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ppj.clickhouse.mapper.UmengTokenUserMapper">
+
+  <sql id="Base_Column_List">
+        duitang_uuid, umeng_token, user_id, username, app_version, device_model, os_name, os_version, gmt_update, gmt_create, install_time, start_up_time, fetch_tags_time
+    </sql>
+
+  <insert id="findAll">
+        select * from default.umeng_token_user;
+    </insert>
+
+</mapper>

@@ -1,4 +1,0 @@
-2019-07-31 22:06:25 [DEBUG](LogFactory                    ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Use [Slf4j] Logger As Default.
-2019-07-31 22:06:25 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
-2019-07-31 22:06:33 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []
-2019-07-31 22:06:48 [DEBUG](GlobalCookieManager           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Add Cookie from local store: []

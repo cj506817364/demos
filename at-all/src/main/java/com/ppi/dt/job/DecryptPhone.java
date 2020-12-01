@@ -61,12 +61,13 @@ public class DecryptPhone {
 //                Console.log(errorInfo);
 //                errorInfoList.add(errorInfo);
 
-                MobileInfo info = new MobileInfo(s,errorEncryptMobile,mobile,yesEncryptMobile);
+                MobileInfo info = new MobileInfo(s, errorEncryptMobile, mobile, yesEncryptMobile);
                 Console.log(info.toString());
                 errorInfoList.add(info);
                 final String sql = StrUtil
-                    .format("update auth_user set encrypt_telephone='{}' where encrypt_telephone='{}';",
-                        yesEncryptMobile, errorEncryptMobile);
+                    .format(
+                        "update auth_user set encrypt_telephone='{}' where encrypt_telephone='{}' AND (select count(*) from auth_user where encrypt_telephone='{}')=0;",
+                        yesEncryptMobile, errorEncryptMobile, yesEncryptMobile);
                 Console.log(sql);
                 sqlList.add(sql);
               }
@@ -91,6 +92,7 @@ public class DecryptPhone {
   @Builder
   @AllArgsConstructor
   static class MobileInfo {
+
     private String 源手机号;
     private String 源手机号密文;
     private String 新手机号;

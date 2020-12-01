@@ -1,16 +1,20 @@
-package com.duitang.webscript.infra.utils;
+package com.ppi.dt.common.util;
 
 import com.google.common.base.Preconditions;
+
+import lombok.extern.slf4j.Slf4j;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
+
+import cn.hutool.core.lang.Console;
+
 import java.io.File;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.LineIterator;
 
-@Slf4j
 public class SimpleBatchTools {
 
 
@@ -61,7 +65,7 @@ public class SimpleBatchTools {
       }
 
     } catch (Exception e) {
-      log.error("iterator file failed:{}, batchSize:{}", file, batchSize, e);
+      Console.error("iterator file failed:{}, batchSize:{}", file, batchSize, e);
     } finally {
       if (it != null) {
         LineIterator.closeQuietly(it);

@@ -72,7 +72,7 @@ public class Cdp4jApplication {
     session.click("#city_btn");
     session.wait(1000);
     session.click("/html/body/div[2]/div[2]/span[12]");
-    session.waitUntil(thisSession -> "请使用企业微信扫描二维码登录".equals(session.getText("#wx_timeout_tips")));
+    session.waitUntil(thisSession -> "请使用企业微信扫描二维码登录".equals(thisSession.getThis().getText("#wx_timeout_tips")));
     Console.log("请扫码! 扫码成功后按任意键!");
     System.in.read();
   }

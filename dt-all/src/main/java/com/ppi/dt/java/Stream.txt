@@ -1,168 +1,52 @@
-Classfile /Users/cj/workspaces/IntelliJ IDEA/demos/dt-all/src/main/java/com/ppi/dt/java/Stream.class
-  Last modified 2021-1-5; size 1623 bytes
-  MD5 checksum ae0539d32491e25f75afde13d1a32dda
-  Compiled from "Stream.java"
-public class com.ppi.dt.java.Stream
-  minor version: 0
-  major version: 52
-  flags: ACC_PUBLIC, ACC_SUPER
-Constant pool:
-   #1 = Methodref          #18.#29        // java/lang/Object."<init>":()V
-   #2 = Class              #30            // java/util/ArrayList
-   #3 = Methodref          #2.#29         // java/util/ArrayList."<init>":()V
-   #4 = Class              #31            // com/ppi/dt/java/Stream$People
-   #5 = String             #32            // ppj
-   #6 = Methodref          #4.#33         // com/ppi/dt/java/Stream$People."<init>":(Ljava/lang/String;I)V
-   #7 = InterfaceMethodref #14.#34        // java/util/List.add:(Ljava/lang/Object;)Z
-   #8 = String             #35            // baize
-   #9 = InterfaceMethodref #14.#36        // java/util/List.stream:()Ljava/util/stream/Stream;
-  #10 = InvokeDynamic      #0:#42         // #0:apply:()Ljava/util/function/Function;
-  #11 = InterfaceMethodref #43.#44        // java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
-  #12 = Methodref          #45.#46        // java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
-  #13 = InterfaceMethodref #43.#47        // java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
-  #14 = Class              #48            // java/util/List
-  #15 = Fieldref           #49.#50        // java/lang/System.out:Ljava/io/PrintStream;
-  #16 = Methodref          #51.#52        // java/io/PrintStream.println:(Ljava/lang/Object;)V
-  #17 = Class              #53            // com/ppi/dt/java/Stream
-  #18 = Class              #54            // java/lang/Object
-  #19 = Utf8               People
-  #20 = Utf8               InnerClasses
-  #21 = Utf8               <init>
-  #22 = Utf8               ()V
-  #23 = Utf8               Code
-  #24 = Utf8               LineNumberTable
-  #25 = Utf8               main
-  #26 = Utf8               ([Ljava/lang/String;)V
-  #27 = Utf8               SourceFile
-  #28 = Utf8               Stream.java
-  #29 = NameAndType        #21:#22        // "<init>":()V
-  #30 = Utf8               java/util/ArrayList
-  #31 = Utf8               com/ppi/dt/java/Stream$People
-  #32 = Utf8               ppj
-  #33 = NameAndType        #21:#55        // "<init>":(Ljava/lang/String;I)V
-  #34 = NameAndType        #56:#57        // add:(Ljava/lang/Object;)Z
-  #35 = Utf8               baize
-  #36 = NameAndType        #58:#59        // stream:()Ljava/util/stream/Stream;
-  #37 = Utf8               BootstrapMethods
-  #38 = MethodHandle       #6:#60         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
-  #39 = MethodType         #61            //  (Ljava/lang/Object;)Ljava/lang/Object;
-  #40 = MethodHandle       #5:#62         // invokevirtual com/ppi/dt/java/Stream$People.getAge:()I
-  #41 = MethodType         #63            //  (Lcom/ppi/dt/java/Stream$People;)Ljava/lang/Integer;
-  #42 = NameAndType        #64:#65        // apply:()Ljava/util/function/Function;
-  #43 = Class              #66            // java/util/stream/Stream
-  #44 = NameAndType        #67:#68        // map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
-  #45 = Class              #69            // java/util/stream/Collectors
-  #46 = NameAndType        #70:#71        // toList:()Ljava/util/stream/Collector;
-  #47 = NameAndType        #72:#73        // collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
-  #48 = Utf8               java/util/List
-  #49 = Class              #74            // java/lang/System
-  #50 = NameAndType        #75:#76        // out:Ljava/io/PrintStream;
-  #51 = Class              #77            // java/io/PrintStream
-  #52 = NameAndType        #78:#79        // println:(Ljava/lang/Object;)V
-  #53 = Utf8               com/ppi/dt/java/Stream
-  #54 = Utf8               java/lang/Object
-  #55 = Utf8               (Ljava/lang/String;I)V
-  #56 = Utf8               add
-  #57 = Utf8               (Ljava/lang/Object;)Z
-  #58 = Utf8               stream
-  #59 = Utf8               ()Ljava/util/stream/Stream;
-  #60 = Methodref          #80.#81        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
-  #61 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
-  #62 = Methodref          #4.#82         // com/ppi/dt/java/Stream$People.getAge:()I
-  #63 = Utf8               (Lcom/ppi/dt/java/Stream$People;)Ljava/lang/Integer;
-  #64 = Utf8               apply
-  #65 = Utf8               ()Ljava/util/function/Function;
-  #66 = Utf8               java/util/stream/Stream
-  #67 = Utf8               map
-  #68 = Utf8               (Ljava/util/function/Function;)Ljava/util/stream/Stream;
-  #69 = Utf8               java/util/stream/Collectors
-  #70 = Utf8               toList
-  #71 = Utf8               ()Ljava/util/stream/Collector;
-  #72 = Utf8               collect
-  #73 = Utf8               (Ljava/util/stream/Collector;)Ljava/lang/Object;
-  #74 = Utf8               java/lang/System
-  #75 = Utf8               out
-  #76 = Utf8               Ljava/io/PrintStream;
-  #77 = Utf8               java/io/PrintStream
-  #78 = Utf8               println
-  #79 = Utf8               (Ljava/lang/Object;)V
-  #80 = Class              #83            // java/lang/invoke/LambdaMetafactory
-  #81 = NameAndType        #84:#87        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
-  #82 = NameAndType        #88:#89        // getAge:()I
-  #83 = Utf8               java/lang/invoke/LambdaMetafactory
-  #84 = Utf8               metafactory
-  #85 = Class              #91            // java/lang/invoke/MethodHandles$Lookup
-  #86 = Utf8               Lookup
-  #87 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
-  #88 = Utf8               getAge
-  #89 = Utf8               ()I
-  #90 = Class              #92            // java/lang/invoke/MethodHandles
-  #91 = Utf8               java/lang/invoke/MethodHandles$Lookup
-  #92 = Utf8               java/lang/invoke/MethodHandles
-{
+Compiled from "Stream.java"
+public class com.ppi.dt.java.Stream {
   public com.ppi.dt.java.Stream();
-    descriptor: ()V
-    flags: ACC_PUBLIC
     Code:
-      stack=1, locals=1, args_size=1
-         0: aload_0
-         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
-         4: return
-      LineNumberTable:
-        line 11: 0
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+    LineNumberTable:
+      line 11: 0
 
   public static void main(java.lang.String[]);
-    descriptor: ([Ljava/lang/String;)V
-    flags: ACC_PUBLIC, ACC_STATIC
     Code:
-      stack=5, locals=3, args_size=1
-         0: new           #2                  // class java/util/ArrayList
-         3: dup
-         4: invokespecial #3                  // Method java/util/ArrayList."<init>":()V
-         7: astore_1
-         8: aload_1
-         9: new           #4                  // class com/ppi/dt/java/Stream$People
-        12: dup
-        13: ldc           #5                  // String ppj
-        15: bipush        26
-        17: invokespecial #6                  // Method com/ppi/dt/java/Stream$People."<init>":(Ljava/lang/String;I)V
-        20: invokeinterface #7,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
-        25: pop
-        26: aload_1
-        27: new           #4                  // class com/ppi/dt/java/Stream$People
-        30: dup
-        31: ldc           #8                  // String baize
-        33: bipush        23
-        35: invokespecial #6                  // Method com/ppi/dt/java/Stream$People."<init>":(Ljava/lang/String;I)V
-        38: invokeinterface #7,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
-        43: pop
-        44: aload_1
-        45: invokeinterface #9,  1            // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
-        50: invokedynamic #10,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
-        55: invokeinterface #11,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
-        60: invokestatic  #12                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
-        63: invokeinterface #13,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
-        68: checkcast     #14                 // class java/util/List
-        71: astore_2
-        72: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
-        75: aload_2
-        76: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
-        79: return
-      LineNumberTable:
-        line 14: 0
-        line 15: 8
-        line 16: 26
-        line 17: 44
-        line 18: 72
-        line 19: 79
+       0: new           #2                  // class java/util/ArrayList
+       3: dup
+       4: invokespecial #3                  // Method java/util/ArrayList."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: new           #4                  // class com/ppi/dt/java/Stream$People
+      12: dup
+      13: ldc           #5                  // String ppj
+      15: bipush        26
+      17: invokespecial #6                  // Method com/ppi/dt/java/Stream$People."<init>":(Ljava/lang/String;I)V
+      20: invokeinterface #7,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      25: pop
+      26: aload_1
+      27: new           #4                  // class com/ppi/dt/java/Stream$People
+      30: dup
+      31: ldc           #8                  // String baize
+      33: bipush        23
+      35: invokespecial #6                  // Method com/ppi/dt/java/Stream$People."<init>":(Ljava/lang/String;I)V
+      38: invokeinterface #7,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      43: pop
+      44: aload_1
+      45: invokeinterface #9,  1            // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      50: invokedynamic #10,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      55: invokeinterface #11,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      60: invokestatic  #12                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      63: invokeinterface #13,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      68: checkcast     #14                 // class java/util/List
+      71: astore_2
+      72: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      75: aload_2
+      76: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+      79: return
+    LineNumberTable:
+      line 14: 0
+      line 15: 8
+      line 16: 26
+      line 17: 44
+      line 18: 72
+      line 19: 79
 }
-SourceFile: "Stream.java"
-InnerClasses:
-     static #19= #4 of #17; //People=class com/ppi/dt/java/Stream$People of class com/ppi/dt/java/Stream
-     public static final #86= #85 of #90; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
-BootstrapMethods:
-  0: #38 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
-    Method arguments:
-      #39 (Ljava/lang/Object;)Ljava/lang/Object;
-      #40 invokevirtual com/ppi/dt/java/Stream$People.getAge:()I
-      #41 (Lcom/ppi/dt/java/Stream$People;)Ljava/lang/Integer;

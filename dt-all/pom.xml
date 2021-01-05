@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>at-all</artifactId>
+  <artifactId>dt-all</artifactId>
 
   <dependencies>
     <dependency>

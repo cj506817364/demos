@@ -23,7 +23,7 @@
     <module>webmagic</module>
     <module>cdp4j</module>
     <module>mini-jvm</module>
-    <module>at-all</module>
+    <module>dt-all</module>
     <module>clickhouse</module>
   </modules>
 

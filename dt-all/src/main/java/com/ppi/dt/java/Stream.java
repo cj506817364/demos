@@ -17,4 +17,20 @@ public class Stream {
     final List<Integer> collect = pList.stream().map(People::getAge).collect(Collectors.toList());
     System.out.println(collect);
   }
+
+  static class People {
+
+    private String name;
+    private int age;
+
+    public People(String name, int age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    public int getAge() {
+      return age;
+    }
+  }
+
 }

@@ -1,5 +1,7 @@
 package com.ppi.dt.java;
 
+import cn.hutool.core.thread.ThreadUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,11 +13,15 @@ import java.util.stream.Collectors;
 public class Stream {
 
   public static void main(String[] args) {
-    List<People> pList = new ArrayList<>();
-    pList.add(new People("ppj",26));
-    pList.add(new People("baize",23));
-    final List<Integer> collect = pList.stream().map(People::getAge).collect(Collectors.toList());
-    System.out.println(collect);
+    while (true){
+      List<People> pList = new ArrayList<>();
+      pList.add(new People("ppj",26));
+      pList.add(new People("baize",23));
+      final List<Integer> collect = pList.stream().map(People::getAge).collect(Collectors.toList());
+      System.out.println(collect);
+      ThreadUtil.sleep(1000);
+    }
+
   }
 
   static class People {

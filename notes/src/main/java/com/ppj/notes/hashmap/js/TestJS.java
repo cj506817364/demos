@@ -14,7 +14,7 @@ public class TestJS {
 
     public static void main(String[] args) throws ScriptException {
         String x = ResourceUtil.readUtf8Str("x.js");
-        String y = ResourceUtil.readUtf8Str("y.js");
+        String y = ResourceUtil.readUtf8Str("static/y.js");
         String z = ResourceUtil.readUtf8Str("z.js");
         JavaScriptEngine javaScriptEngine = new JavaScriptEngine();
         javaScriptEngine.eval(x);

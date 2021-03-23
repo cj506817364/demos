@@ -1,8 +1,6 @@
 package com.ppj.test;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import cn.hutool.http.HttpResponse;
-import cn.hutool.http.HttpUtil;
 import cn.hutool.script.JavaScriptEngine;
 
 import javax.script.ScriptException;
@@ -20,7 +18,7 @@ public class SpiderSBJTest {
     private static final String SEARCH_URL = DOMAIN_URL + "/txnS02.do";
 
     public static void main(String[] args) throws ScriptException {
-        String s = ResourceUtil.readUtf8Str("rresult.js");
+        String s = ResourceUtil.readUtf8Str("static/rresult.js");
         System.out.println(new JavaScriptEngine().eval(s));
 //        HttpResponse execute = HttpUtil.createGet(INDEX_URL).execute();
 //        System.out.println(execute);

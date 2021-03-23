@@ -1,0 +1,30 @@
+职责划分
+
+业务参数(具体业务判断逻辑)
+AuthToken
+过期时间,token,创建时间
+create(baseUrl,createTime,Map<String,String> params)
+getToken()
+isExpired();
+match(AuthToken)
+
+请求参数(负责解析请求)
+ApiRequest
+baseUrl,token,appId,timestamp
+create(url)
+getBaseUrl()
+getToken()
+getAppId()
+getTimestamp()
+
+持久化方法(与数据库交互)
+CredentialStorage
+getPasswordByAppId(appId)
+
+// 进行认证业务,主要流程
+1. 构造AuthToken
+2. 调用CredentialStorage进行判断是否合法
+ApiAuthenticator(业务调用)
+private CredentialStorage credentialStorage;
+void auth(String url);  
+void auth(ApiRequest apiRequest);

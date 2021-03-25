@@ -6,6 +6,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -34,7 +35,7 @@ public class FooBar {
   }
 
   public static void main(String[] args) throws Exception {
-    final FooBar4 fooBar = new FooBar4(10);
+    final FooBar6 fooBar = new FooBar6(10);
     new Thread(() -> {
       try {
         fooBar.foo(() -> System.out.print("foo"));
@@ -203,6 +204,10 @@ class FooBar4 {
 //synchronized + 标志位 + 唤醒
 class FooBar5 {
 
+  // 锁标志 用于切换
+  final Object obj = new Object();
+  // 标志位 控制执行顺序 true => foo   false => bar
+  volatile boolean flag = true;
   private int n;
 
   public FooBar5(int n) {
@@ -213,7 +218,15 @@ class FooBar5 {
 
     for (int i = 0; i < n; i++) {
       // printFoo.run() outputs "foo". Do not change or remove this line.
-      printFoo.run();
+      synchronized (obj) {
+        while (!flag) {
+          obj.wait();
+        }
+        printFoo.run();
+        flag = false;
+        obj.notifyAll();
+      }
+
     }
   }
 
@@ -221,14 +234,23 @@ class FooBar5 {
 
     for (int i = 0; i < n; i++) {
       // printBar.run() outputs "bar". Do not change or remove this line.
-      printBar.run();
+      synchronized (obj){
+        while (flag){
+          obj.wait();
+        }
+        printBar.run();
+        flag = true;
+        obj.notifyAll();
+      }
     }
   }
 }
-
+// 信号量 适合控制顺序
 class FooBar6 {
 
   private int n;
+  Semaphore foo = new Semaphore(1);
+  Semaphore bar = new Semaphore(0);
 
   public FooBar6(int n) {
     this.n = n;
@@ -238,7 +260,9 @@ class FooBar6 {
 
     for (int i = 0; i < n; i++) {
       // printFoo.run() outputs "foo". Do not change or remove this line.
+      foo.acquire();
       printFoo.run();
+      bar.release();
     }
   }
 
@@ -246,7 +270,9 @@ class FooBar6 {
 
     for (int i = 0; i < n; i++) {
       // printBar.run() outputs "bar". Do not change or remove this line.
+      bar.acquire();
       printBar.run();
+      foo.release();
     }
   }
 }

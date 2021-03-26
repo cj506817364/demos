@@ -11,7 +11,7 @@ import lombok.ToString;
  * @author pipi
  * @since 2021/3/26 18:15
  */
-public class WithoutPatternDemo {
+public class WithoutIteratorPatternDemo {
 
   public static void main(String[] args) {
     final Student ppj = new Student("ppj");

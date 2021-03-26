@@ -16,18 +16,21 @@ import java.util.List;
 public class IteratorPatternDemo {
 
   public static void main(String[] args) {
+    final Aggregate<Student> studentAggregate = mockClassroom();
+    final Iterator<Student> iterator = studentAggregate.iterator();
+    while (iterator.hasNext()) {
+      System.out.println(iterator.next());
+    }
+  }
+
+  public static Aggregate<Student> mockClassroom() {
     final Student ppj = new Student("ppj");
     final Student bz = new Student("bz");
     final Classroom classroom = new Classroom(2);
     classroom.addStudent(ppj);
     classroom.addStudent(bz);
 
-    final Iterator<Student> iterator = classroom.iterator();
-    while (iterator.hasNext()) {
-      System.out.println(iterator.next());
-    }
-
-
+    return classroom;
   }
 
   public interface Iterator<T> {

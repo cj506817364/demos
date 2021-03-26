@@ -25,6 +25,7 @@
     <module>mini-jvm</module>
     <module>dt-all</module>
     <module>clickhouse</module>
+    <module>design</module>
   </modules>
 
   <packaging>pom</packaging>

@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 
 /**
  * 装饰器模式
+ * 例子:
+ * javaIO: new BufferedReader(new InputStreamReader(new FileInputStream("")));
+ * springAOP(动态代理)
  *
  * @author pipi
  * @since 2021/4/6 18:52

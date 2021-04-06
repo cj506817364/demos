@@ -17,26 +17,25 @@ public class BuilderPatternDemo {
     }
 
     public static class Director<T> {
-        private Builder<T>builder;
+        private Builder<T> builder;
 
         public Director(Builder<T> builder) {
             this.builder = builder;
         }
 
         public T build(String f1, String f2, String f3) {
-            return (T) builder.field1(f1).field2(f2).field3(f3).create();
+            return builder.field1(f1).field2(f2).field3(f3).create();
         }
     }
 
     public interface Builder<T> {
-        Builder field1(String f1);
+        Builder<T> field1(String f1);
 
-        Builder field2(String f2);
+        Builder<T> field2(String f2);
 
-        Builder field3(String f3);
+        Builder<T> field3(String f3);
 
         T create();
-
     }
 
     public static class ProductBuilder implements Builder<Product> {
@@ -44,21 +43,21 @@ public class BuilderPatternDemo {
         private Product product = new Product();
 
         @Override
-        public Builder field1(String f1) {
+        public Builder<Product> field1(String f1) {
             System.out.println("设置field1前置逻辑");
             product.setField1(f1);
             return this;
         }
 
         @Override
-        public Builder field2(String f2) {
+        public Builder<Product> field2(String f2) {
             System.out.println("设置field2前置逻辑");
             product.setField2(f2);
             return this;
         }
 
         @Override
-        public Builder field3(String f3) {
+        public Builder<Product> field3(String f3) {
             System.out.println("设置field3前置逻辑");
             product.setField3(f3);
             return this;
@@ -77,6 +76,5 @@ public class BuilderPatternDemo {
         private String field1;
         private String field2;
         private String field3;
-
     }
 }

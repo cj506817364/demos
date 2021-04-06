@@ -35,7 +35,7 @@ public class PrototypePatternDemo {
     @AllArgsConstructor
     @Getter
     @Setter
-    public static class Product extends Object {
+    public static class Product {
         private String name;
         private Component component;
 

@@ -6,7 +6,7 @@ import lombok.ToString;
 
 /**
  * 构造器模式
- * @author
+ * @author ppj
  * @since 2021/4/4 15:29
  */
 public class BuilderPatternDemo {

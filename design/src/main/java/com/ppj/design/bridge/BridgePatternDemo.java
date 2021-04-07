@@ -4,8 +4,9 @@ import lombok.AllArgsConstructor;
 
 /**
  * 桥接模式
- *
+ * <p>
  * 一个代码组件 基于另一个代码组件的接口去调用, 那个这个接口 就相当于一个桥梁
+ *
  * @author pipi
  * @since 2021/4/6 19:20
  */
@@ -14,8 +15,8 @@ public class BridgePatternDemo {
   public static void main(String[] args) {
     final Implementor impl = new ConcreteImpl();
     new RefinedAbstraction(impl).exec();
-
   }
+
   public interface Implementor {
 
     void exec();

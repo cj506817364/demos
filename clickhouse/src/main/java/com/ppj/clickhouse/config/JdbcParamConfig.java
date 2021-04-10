@@ -15,4 +15,5 @@ public class JdbcParamConfig {
   private Integer maxActive ;
   private Integer minIdle ;
   private Integer maxWait ;
+
 }

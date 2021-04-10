@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import cn.hutool.core.lang.Console;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,10 @@ import java.util.List;
 public class VisitorPatternDemo {
 
   public static void main(String[] args) {
+    Float num1 = 13.846154f;
+    BigDecimal calculation = new BigDecimal(String.valueOf(num1));
+    System.out.println(calculation);
+
     final Dept leafDept1 = new Dept("叶子部门1");
     final Dept leafDept2 = new Dept("叶子部门2");
     final Dept leafDept3 = new Dept("叶子部门3");

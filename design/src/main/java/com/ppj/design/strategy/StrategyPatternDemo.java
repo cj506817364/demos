@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * 策略模式
- *
+ * 替换掉屎一样的if else
  * @author pipi
  * @since 2021/4/6 16:48
  */

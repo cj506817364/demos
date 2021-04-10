@@ -13,13 +13,12 @@ import javax.annotation.Resource;
  * @date 2020/6/5 12:07
  */
 @Component
-public class SyncDataJob implements ApplicationListener<ApplicationStartedEvent> {
+public class SyncDataJob {
 
   @Resource
   private UmengTokenUserMapper umengTokenUserMapper;
 
-  @Override
-  public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
+  public void runJob() {
     System.out.println(umengTokenUserMapper.findAll());
   }
 }

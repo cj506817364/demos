@@ -26,33 +26,21 @@ public class No1734_解码异或后的排列 {
     System.out.println(Arrays.toString(new No1734_解码异或后的排列().decode(new int[] {3, 1})));
   }
 
-
-
   public int[] decode(int[] encoded) {
     int n = encoded.length + 1;
-    int cal0_n = cal0_n(n);
-    int calE1_En = calE1_En(encoded,n);
+    int total = 0;
+    for (int i = 1; i <= n; i++) {
+      total ^= i;
+    }
+    int odd = 0;
+    for (int i = 1; i < n - 1; i += 2) {
+      odd ^= encoded[i];
+    }
     int[] perm = new int[n];
-    perm[0] = cal0_n^calE1_En;
+    perm[0] = total ^ odd;
     for (int i = 0; i < n - 1; i++) {
       perm[i + 1] = perm[i] ^ encoded[i];
     }
     return perm;
-  }
-
-  private int calE1_En(int[] encoded, int n) {
-    int calE1_En = 0;
-    for (int i = 1; i < n - 1; i += 2) {
-      calE1_En ^= encoded[i];
-    }
-    return calE1_En;
-  }
-
-  private int cal0_n(int n) {
-    int cal0_n = 0;
-    for (int i = 1; i < n; i++) {
-      cal0_n^=i;
-    }
-    return cal0_n;
   }
 }

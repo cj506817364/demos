@@ -1,7 +1,5 @@
 package com.ppj.algorithm.leetcode;
 
-import javafx.util.Pair;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -31,20 +29,21 @@ import java.util.stream.Collectors;
 public class No1311_获取你好友已观看的视频 {
 
   public static void main(String[] args) {
-//    List<List<String>> videos = new ArrayList<List<String>>(){
-//      {add(new ArrayList<String>(){{add("A");add("B");}});};
-//      {add(new ArrayList<String>(){{add("C");}});};
-//      {add(new ArrayList<String>(){{add("B");add("C");}});};
-//      {add(new ArrayList<String>(){{add("D");}});};
-//    };
-//    int[][] friends = new int[][]{{1,2},{0,3},{0,3},{1,2}};
-//    int id = 0;
-//    int level = 2;
-//    System.out.println(new No1311_获取你好友已观看的视频().watchedVideosByFriends(videos,friends,id,level));
+    //    List<List<String>> videos = new ArrayList<List<String>>(){
+    //      {add(new ArrayList<String>(){{add("A");add("B");}});};
+    //      {add(new ArrayList<String>(){{add("C");}});};
+    //      {add(new ArrayList<String>(){{add("B");add("C");}});};
+    //      {add(new ArrayList<String>(){{add("D");}});};
+    //    };
+    //    int[][] friends = new int[][]{{1,2},{0,3},{0,3},{1,2}};
+    //    int id = 0;
+    //    int level = 2;
+    //    System.out.println(new
+    // No1311_获取你好友已观看的视频().watchedVideosByFriends(videos,friends,id,level));
   }
 
   public List<String> watchedVideosByFriends(
-          List<List<String>> watchedVideos, int[][] friends, int id, int level) {
+      List<List<String>> watchedVideos, int[][] friends, int id, int level) {
     List<Integer> friendIdList = getFriends(friends, level, id);
     List<String> video = new ArrayList<>();
     for (int friendId : friendIdList) {
@@ -52,8 +51,13 @@ public class No1311_获取你好友已观看的视频 {
       video.addAll(strings);
     }
     List<String> res = new ArrayList<>();
-    video.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
-            .entrySet().stream().sorted(Map.Entry.comparingByKey()).sorted(Map.Entry.comparingByValue()).forEachOrdered(e->res.add(e.getKey()));
+    video.stream()
+        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+        .entrySet()
+        .stream()
+        .sorted(Map.Entry.comparingByKey())
+        .sorted(Map.Entry.comparingByValue())
+        .forEachOrdered(e -> res.add(e.getKey()));
     return res;
   }
 
@@ -78,5 +82,45 @@ public class No1311_获取你好友已观看的视频 {
     }
     return new ArrayList<>(queue);
   }
-
+  //
+  //  private List<Integer> getFriends(int[][] friends, int level, int id) {
+  //    Node myNode = new Node(id);
+  //    for (int[] friend : friends) {
+  //      for (int i = 0; i < friend.length; i++) {
+  //        if(myNode.contains(friend[i])){
+  //          continue;
+  //        }
+  //        Node node = myNode.getNodeByFriendId(i);
+  //
+  //
+  //        myNode.add(new Node(friend[i]));
+  //      }
+  //    }
+  //  }
+  //
+  //  static class Node {
+  //    int id;
+  //    List<Node> friendList = new ArrayList<>();
+  //
+  //    public Node(int id) {
+  //      this.id = id;
+  //    }
+  //
+  //    public boolean contains(int friend) {
+  //      final boolean oo = this.id == friend;
+  //      if (oo) {
+  //        return true;
+  //      }
+  //      for (Node node : friendList) {
+  //        if (node.contains(friend)) {
+  //          return true;
+  //        }
+  //      }
+  //      return false;
+  //    }
+  //
+  //    public void add(Node node) {
+  //      friendList.add(node);
+  //    }
+  //  }
 }

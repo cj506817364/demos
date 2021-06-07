@@ -13,7 +13,7 @@ public class No494_目标和 {
     final int targetSumWays = new No494_目标和().findTargetSumWays(new int[] {1, 1, 1, 1, 1}, 3);
     System.out.println(targetSumWays);
   }
-
+  // 回溯
   public int findTargetSumWays(int[] nums, int target) {
     cal(nums, target, 0, 0);
     return count;

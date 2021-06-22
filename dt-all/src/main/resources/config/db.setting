@@ -1,0 +1,4 @@
+[dw1_m]
+url = jdbc:mysql://10.1.5.218:3306/dw1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+username = dw1
+password = MU6NZUeHM32t

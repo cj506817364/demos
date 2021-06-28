@@ -11,11 +11,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
+ * 巨量广告激活脚本 coding for easy working
  * @author pipi
  * @since 2021/6/21 19:08
  */
 public class ActiveAd {
 
+  // 记得修改成你手机的IDFA
   public static final String IDFA = "0A46D5FB-7534-40CB-B72F-82C800F3A8EA";
   public static Connection conn;
 

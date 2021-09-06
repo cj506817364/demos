@@ -60,4 +60,21 @@
     </dependency>
   </dependencies>
 
+  <!-- commandline: mvn exec:java -Dexec.mainClass="org.phpfirefly.test.Server" -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.ppi.dt.job.index.TriggerFromMongo</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>

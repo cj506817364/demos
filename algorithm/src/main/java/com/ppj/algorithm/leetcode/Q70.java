@@ -61,6 +61,7 @@ public class Q70 {
   }
 
   public static void main(String[] args) {
+
     System.out.println("Map<Integer> map = new HashMap<>();");
     for (int i = 0; i < 45; i++) {
       Console.log("map.put({},{});", i, new Q70().climbStairs(i));

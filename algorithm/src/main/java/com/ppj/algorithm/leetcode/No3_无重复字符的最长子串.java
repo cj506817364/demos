@@ -11,7 +11,7 @@ public class No3_无重复字符的最长子串 {
 
   public static void main(String[] args) {
     //
-    System.out.println(new No3_无重复字符的最长子串().lengthOfLongestSubstring("abcabcbb"));
+    System.out.println(new No3_无重复字符的最长子串().lengthOfLongestSubstring("dvdf"));
   }
 
   public int lengthOfLongestSubstring(String s) {

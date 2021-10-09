@@ -12,7 +12,7 @@ import java.util.Map;
 public class No477_汉明距离总和 {
 
   public static void main(String[] args) {
-    System.out.println(new Date().getTime() / 1000);
+    System.out.println(System.currentTimeMillis() / 1000);
     System.out.println(1574835097);
     int val = new No477_汉明距离总和().totalHammingDistance(new int[]{4,14,2});
     System.out.println(val);

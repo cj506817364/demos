@@ -7,3 +7,8 @@ password = MU6NZUeHM32t
 url = jdbc:mysql://10.1.3.93:3306/zcwdb?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
 username = zcw_db_user
 password = PZ4tEcNVrLhcPxUt
+
+[uwa_test]
+url = jdbc:mysql://123.57.242.1:3306/uwa-recruit-test?useServerPrepStmts=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false
+username = root
+password = UwaRootUser123!

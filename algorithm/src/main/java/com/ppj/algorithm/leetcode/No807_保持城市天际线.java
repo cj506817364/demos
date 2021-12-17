@@ -7,7 +7,7 @@ package com.ppj.algorithm.leetcode;
 public class No807_保持城市天际线 {
 
   public static void main(String[] args) {
-
+    System.out.println("睡我的时候就不知道为什么这么喜欢我后悔迷宫的十字路口等红灯的人".length());
     final int res = new No807_保持城市天际线().maxIncreaseKeepingSkyline(new int[][]{
         {3, 0, 8, 4}, {2, 4, 5, 7}, {9, 2, 6, 3}, {0, 3, 1, 0}
     });

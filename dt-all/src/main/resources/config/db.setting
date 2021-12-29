@@ -12,3 +12,8 @@ password = PZ4tEcNVrLhcPxUt
 url = jdbc:mysql://123.57.242.1:3306/uwa-recruit-test?useServerPrepStmts=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false
 username = root
 password = UwaRootUser123!
+
+[uwa_dev]
+url = jdbc:mysql://192.168.1.70:13306/uwa-recruit?useServerPrepStmts=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false
+username = root
+password = UwaRootUser123!

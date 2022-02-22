@@ -1,5 +1,7 @@
 package com.ppi.dt.job.uwa;
 
+import com.google.common.collect.ImmutableList;
+
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
@@ -24,8 +26,8 @@ public class ResumePostCreator {
 
   static {
     try {
-      conn = DSFactory.get("uwa_dev").getConnection();
-//      conn = DSFactory.get("uwa_test").getConnection();
+//      conn = DSFactory.get("uwa_dev").getConnection();
+      conn = DSFactory.get("uwa_test").getConnection();
     } catch (SQLException throwables) {
       throwables.printStackTrace();
     }
@@ -33,7 +35,7 @@ public class ResumePostCreator {
 
   public static void main(String[] args) throws SQLException {
     createBatchForPost();
-//    createResumeForUser(108501, "12d303379b306dfe635abbc239e19d0b");
+    createResumeForUser(108501, "12d303379b306dfe635abbc239e19d0b");
   }
 
   private static void createResumeForUser(int userId, String postCategoryId) throws SQLException {
@@ -65,7 +67,6 @@ public class ResumePostCreator {
     createForStatus(postCategoryId, post, 2, 0);
     createForStatus(postCategoryId, post, 3, 0);
 //    createForStatus(postCategoryId, post, 0, 1);
-
 
   }
 
@@ -112,7 +113,8 @@ public class ResumePostCreator {
             + ", 0, '1994-11-20', 1, '2017-11-01', 310000, 310100, '18627199968', 'cjmldxtj@icloud.com', 0, 0, 0, '2021-11-23 14:20:26', '2021-11-23 14:20:37');");
   }
 
-  public static void createResume(String resumeId, Integer userId, String postCategoryId, String postName)
+  public static void createResume(String resumeId, Integer userId, String postCategoryId,
+      String postName)
       throws SQLException {
 
     exec(

@@ -1,11 +1,12 @@
 package com.ppj.dt.test.job;
 
+import lombok.extern.slf4j.Slf4j;
+
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.format.FastDateFormat;
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.StrUtil;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.TimeZone;
 
@@ -15,7 +16,16 @@ import java.util.TimeZone;
  */
 @Slf4j
 public class DateUtilTest {
+
   public static void main(String[] args) {
+    int i = 1; // 1
+    i = i++;   // 1
+    Console.log("i={} j={} k={}", i, null, null);
+    int j = i++; // j = 1 i = 2
+    Console.log("i={} j={} k={}", i, j, null);
+    int k = i + ++i * i++; // k = 2 + 3*3 = 11 i = 4
+    Console.log("i={} j={} k={}", i, j, k);
+
     System.out.println(DateUtil.parse(null));
     System.out.println(DateUtil.parse(""));
     System.out.println(DateUtil.parse("2021-08-18T06:24:41Z").toString());

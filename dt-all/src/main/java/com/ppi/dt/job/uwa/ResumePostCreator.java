@@ -26,15 +26,15 @@ public class ResumePostCreator {
 
   static {
     try {
-//      conn = DSFactory.get("uwa_dev").getConnection();
-      conn = DSFactory.get("uwa_test").getConnection();
+      conn = DSFactory.get("uwa_dev").getConnection();
+//      conn = DSFactory.get("uwa_test").getConnection();
     } catch (SQLException throwables) {
       throwables.printStackTrace();
     }
   }
 
   public static void main(String[] args) throws SQLException {
-    createBatchForPost();
+//    createBatchForPost();
     createResumeForUser(108501, "12d303379b306dfe635abbc239e19d0b");
   }
 
@@ -143,24 +143,24 @@ public class ResumePostCreator {
         getId(), resumeId, userId);
     // 创建工作经历
     exec(
-        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
-            + "('{}', '{}', {}, '15-16年的工作', '2015-11-01', '2016-11-01', 0, '123123', '310100', 12, 3, '2021-11-24 12:08:01', '2021-11-24 12:32:35');",
+        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, post_sec_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
+            + "('{}', '{}', {}, '15-16年的工作', '2015-11-01', '2016-11-01', 0, '123123','123123', '310100', 12, 3, '2021-11-24 12:08:01', '2021-11-24 12:32:35');",
         getId(), resumeId, userId);
     exec(
-        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
-            + "('{}', '{}', {}, '18年的工作', '2018-11-01', '2020-11-01', 0, '123123', '310100', 12, 1, '2021-11-19 19:38:15', '2021-11-24 12:32:36');",
+        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, post_sec_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
+            + "('{}', '{}', {}, '18年的工作', '2018-11-01', '2020-11-01', 0, '123123', '123123','310100', 12, 1, '2021-11-19 19:38:15', '2021-11-24 12:32:36');",
         getId(), resumeId, userId);
     exec(
-        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES"
-            + "('{}', '{}', {}, '14-15年的工作', '2014-11-01', '2015-11-01', 0, '123123', '310100', 12, 4, '2021-11-24 12:31:53', '2021-11-24 12:32:35');",
+        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, post_sec_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES"
+            + "('{}', '{}', {}, '14-15年的工作', '2014-11-01', '2015-11-01', 0, '123123','123123', '310100', 12, 4, '2021-11-24 12:31:53', '2021-11-24 12:32:35');",
         getId(), resumeId, userId);
     exec(
-        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
-            + "('{}', '{}', {}, '20-22年的工作', '2020-11-01', '2022-11-01', 1, '123123', '310100', 12, 0, '2021-11-19 10:48:18', '2021-11-24 12:32:36');",
+        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, post_sec_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
+            + "('{}', '{}', {}, '20-22年的工作', '2020-11-01', '2022-11-01', 1, '123123','123123', '310100', 12, 0, '2021-11-19 10:48:18', '2021-11-24 12:32:36');",
         getId(), resumeId, userId);
     exec(
-        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
-            + "('{}', '{}', {}, '17-18年的工作', '2017-11-01', '2018-11-01', 0, '123123', '310100', 12, 2, '2021-11-24 12:07:50', '2021-11-24 12:31:56');",
+        "INSERT INTO `uwa-recruit`.job_experience (job_experience_id, resume_id, user_id, company_name, start_time, end_time, is_end_today, post_category_id, post_sec_category_id, position_name, month_salary, order_by, create_time, update_time) VALUES "
+            + "('{}', '{}', {}, '17-18年的工作', '2017-11-01', '2018-11-01', 0, '123123','123123', '310100', 12, 2, '2021-11-24 12:07:50', '2021-11-24 12:31:56');",
         getId(), resumeId, userId);
     // 创建项目经历
     exec(

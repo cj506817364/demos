@@ -1,0 +1,108 @@
+<body>
+<h4>接口名称: 简历信息-工作经历-查询所有的工作经历</h4>
+<h4>所属模块: 简历模块</h4>
+<h4>接口路径: /open/resume/job/experience</h4>
+<h4>请求方式: GET</h4>
+<h4>参数格式: URL PARAM</h4>
+<div>
+  <h4>
+    Parameters
+  </h4>
+  <table>
+    <thead>
+    <tr>
+      <th>参数名称</th>
+      <th>参数描述</th>
+      <th>参数类型</th>
+      <th>参数位置</th>
+      <th>是否必要</th>
+    </tr>
+    <tr>
+      <td>uwa_login_token</td>
+      <td>认证token</td>
+      <td>string</td>
+      <td>cookie</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>x-uwa-api-minor-version</td>
+      <td>Available values : v1.0.1</td>
+      <td>string</td>
+      <td>header</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>x-uwa-app-info</td>
+      <td>用户信息</td>
+      <td>string</td>
+      <td>header</td>
+      <td>否</td>
+    </tr>
+    </thead>
+  </table>
+</div>
+
+<div>
+  <h4>
+    Request body (application/json)
+  </h4>
+</div>
+
+<div>
+  <h4>
+    请求参数示例
+  </h4>
+
+</div>
+
+<div>
+  <h4>
+    返回参数
+  </h4>
+  <table>
+    <thead>
+    <tr>
+      <th>参数名称</th>
+      <th>参数描述</th>
+      <th>参数类型</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>ListJobExperienceResp</td>
+      <td>list(JobExperience对象)</td>
+      <td>list</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h4>
+    JobExperience对象
+  </h4>
+  <table>
+    <thead>
+    <tr>
+      <th>参数名称</th>
+      <th>参数描述</th>
+      <th>参数类型</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>companyName</td>
+      <td>string</td>
+      <td>公司名称</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td>string</td>
+      <td>工作内容</td>
+    </tr>
+    <tr>
+      <td>endTime</td>
+      <td>string</td>
+      <td>离职时间</td>
+    </tr>
+    </tbody>
+  </table>
+</div><div><h4>返回示例</h4><text>{"status":"success"}</text></div></body>

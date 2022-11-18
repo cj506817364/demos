@@ -5,8 +5,10 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.RandomUtil;
+import javafx.concurrent.Task;
 
 import java.util.Date;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionException;
@@ -70,6 +72,38 @@ public class ThreadPool {
     } catch (Exception e) {
     }
     Console.error("over!");
+  }
+  static class TestTask3 implements Callable {
+
+    /**
+     * Computes a result, or throws an exception if unable to do so.
+     *
+     * @return computed result
+     * @throws Exception if unable to compute a result
+     */
+    @Override
+    public Object call() throws Exception {
+      return null;
+    }
+  }
+  static class TestTask4 extends Task {
+
+    /**
+     * Invoked when the Task is executed, the call method must be overridden and
+     * implemented by subclasses. The call method actually performs the
+     * background thread logic. Only the updateProgress, updateMessage, updateValue and
+     * updateTitle methods of Task may be called from code within this method.
+     * Any other interaction with the Task from the background thread will result
+     * in runtime exceptions.
+     *
+     * @return The result of the background work, if any.
+     * @throws Exception an unhandled exception which occurred during the
+     *                   background operation
+     */
+    @Override
+    protected Object call() throws Exception {
+      return null;
+    }
   }
 
   static class TestTask implements Runnable {
